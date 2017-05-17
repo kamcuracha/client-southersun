@@ -34,28 +34,6 @@
   url('../fonts/PoppinsBold.ttf') format('truetype'),
   url('../fonts/PoppinsBold.svg#PoppinsBold') format('svg');
 }
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-weight: 300;
-}
-html {
-  position: relative;
-  min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  // always show up-down scrollbar to prevent content from jumping left/right
-  // depending on whether the page is taller than 100% of viewport height
-  overflow-y: scroll;
-}
-img {
-  max-width: 100%;
-}
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -143,14 +121,23 @@ ul, ol {
 .affix {
   position: fixed;
 }
-.img-stroked {
-  border: 2px solid #c7c8c7;
-}
 @-ms-viewport {
   width: device-width;
 }
 ::selection {
-  background-color: #2E6CAE;
+  background-color: #2E6CAE; // CHANGETHIS
   color: #fff;
   text-shadow: none;
+}
+
+/* Mixins */
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }

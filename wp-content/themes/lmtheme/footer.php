@@ -1,4 +1,41 @@
-<footer id="prefooter" class="section prefooter-section">
+<div class="section section-newsletter">
+    <div class="container">
+        <div class="col-sm-6 py3 text-left">
+            <p>Newsletter be in the know.</p>
+            <a href="#" class="btn btn-flat btn-white mx2">Subscribe</a>
+        </div>
+        <div class="col-sm-6 py3 text-right">
+            <p>Stay connected</p>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                      </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                      </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x"></i>
+                      </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="section section-prefooter">
   <div class="container">
       <div class="col-sm-3">
           <div class="widget">
@@ -49,8 +86,7 @@
       </div>
   </div>
 </footer>
-
-<footer class="section footer-section">
+<footer class="section section-footer">
   <div class="container">
     <div class="footer-center">Copyright &copy 2016-2017 <?php echo get_bloginfo( 'name' ); ?>. All rights reserved. Website by <a target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></div>
   </div>
