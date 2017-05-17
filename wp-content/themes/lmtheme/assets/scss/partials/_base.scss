@@ -1,37 +1,60 @@
 @font-face {
-  font-family: 'Titillium Black';
-  src: url('../fonts/titillium-black-webfont.eot');
-  src: url('../fonts/titillium-black-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-black-webfont.woff2') format('woff2'), url('../fonts/titillium-black-webfont.woff') format('woff'), url('../fonts/titillium-black-webfont.ttf') format('truetype'), url('../fonts/titillium-black-webfont.svg') format('svg');
+  font-family: 'PoppinsRegular';
+  src: url('../fonts/PoppinsRegular.eot');
+  src: url('../fonts/PoppinsRegular.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsRegular.woff2') format('woff2'),
+  url('../fonts/PoppinsRegular.woff') format('woff'),
+  url('../fonts/PoppinsRegular.ttf') format('truetype'),
+  url('../fonts/PoppinsRegular.svg#PoppinsRegular') format('svg');
 }
 @font-face {
-  font-family: 'Titillium Bold';
-  src: url('../fonts/titillium-bold-webfont.eot');
-  src: url('../fonts/titillium-bold-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-bold-webfont.woff2') format('woff2'), url('../fonts/titillium-bold-webfont.woff') format('woff'), url('../fonts/titillium-bold-webfont.ttf') format('truetype'), url('../fonts/titillium-bold-webfont.svg') format('svg');
+  font-family: 'PoppinsMedium';
+  src: url('../fonts/PoppinsMedium.eot');
+  src: url('../fonts/PoppinsMedium.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsMedium.woff2') format('woff2'),
+  url('../fonts/PoppinsMedium.woff') format('woff'),
+  url('../fonts/PoppinsMedium.ttf') format('truetype'),
+  url('../fonts/PoppinsMedium.svg#PoppinsMedium') format('svg');
 }
 @font-face {
-  font-family: 'Titillium Itallic';
-  src: url('../fonts/titillium-regularitalic-webfont.eot');
-  src: url('../fonts/titillium-regularitalic-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-regularitalic-webfont.woff2') format('woff2'), url('../fonts/titillium-regularitalic-webfont.woff') format('woff'), url('../fonts/titillium-regularitalic-webfont.ttf') format('truetype'), url('../fonts/titillium-regularitalic-webfont.svg') format('svg');
+  font-family: 'PoppinsSemiBold';
+  src: url('../fonts/PoppinsSemiBold.eot');
+  src: url('../fonts/PoppinsSemiBold.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsSemiBold.woff2') format('woff2'),
+  url('../fonts/PoppinsSemiBold.woff') format('woff'),
+  url('../fonts/PoppinsSemiBold.ttf') format('truetype'),
+  url('../fonts/PoppinsSemiBold.svg#PoppinsSemiBold') format('svg');
 }
 @font-face {
-  font-family: 'Titillium Regular';
-  src: url('../fonts/titillium-regular-webfont.eot');
-  src: url('../fonts/titillium-regular-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-regular-webfont.woff2') format('woff2'), url('../fonts/titillium-regular-webfont.woff') format('woff'), url('../fonts/titillium-regular-webfont.ttf') format('truetype'), url('../fonts/titillium-regular-webfont.svg') format('svg');
+  font-family: 'PoppinsBold';
+  src: url('../fonts/PoppinsBold.eot');
+  src: url('../fonts/PoppinsBold.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsBold.woff2') format('woff2'),
+  url('../fonts/PoppinsBold.woff') format('woff'),
+  url('../fonts/PoppinsBold.ttf') format('truetype'),
+  url('../fonts/PoppinsBold.svg#PoppinsBold') format('svg');
 }
-@font-face {
-  font-family: 'Titillium Semi-Bold-It';
-  src: url('../fonts/titillium-semibolditalic-webfont.eot');
-  src: url('../fonts/titillium-semibolditalic-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-semibolditalic-webfont.woff2') format('woff2'), url('../fonts/titillium-semibolditalic-webfont.woff') format('woff'), url('../fonts/titillium-semibolditalic-webfont.ttf') format('truetype'), url('../fonts/titillium-semibolditalic-webfont.svg') format('svg');
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-weight: 300;
 }
-@font-face {
-  font-family: 'Titillium Semi-Bold';
-  src: url('../fonts/titillium-semibold-webfont.eot');
-  src: url('../fonts/titillium-semibold-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-semibold-webfont.woff2') format('woff2'), url('../fonts/titillium-semibold-webfont.woff') format('woff'), url('../fonts/titillium-semibold-webfont.ttf') format('truetype'), url('../fonts/titillium-semibold-webfont.svg') format('svg');
+html {
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  // always show up-down scrollbar to prevent content from jumping left/right
+  // depending on whether the page is taller than 100% of viewport height
+  overflow-y: scroll;
 }
-@font-face {
-  font-family: 'Titillium Thin-It';
-  src: url('../fonts/titillium-thinitalic-webfont.eot');
-  src: url('../fonts/titillium-thinitalic-webfont.eot') format('embedded-opentype'), url('../fonts/titillium-thinitalic-webfont.woff2') format('woff2'), url('../fonts/titillium-thinitalic-webfont.woff') format('woff'), url('../fonts/titillium-thinitalic-webfont.ttf') format('truetype'), url('../fonts/titillium-thinitalic-webfont.svg') format('svg');
+img {
+  max-width: 100%;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .clearfix:before,
 .clearfix:after,
@@ -120,6 +143,14 @@
 .affix {
   position: fixed;
 }
+.img-stroked {
+  border: 2px solid #c7c8c7;
+}
 @-ms-viewport {
   width: device-width;
+}
+::selection {
+  background-color: #2E6CAE;
+  color: #fff;
+  text-shadow: none;
 }
