@@ -28,6 +28,32 @@
   }
 }
 
+.btn-badge {
+  display: inline-block;
+  background-color: #6faf57;
+  border: 1px solid #6faf57;
+  border-radius: 4px;
+  font-weight: bold;
+
+  &:before {
+    position: relative;
+    top: 4px;
+    left: 10px;
+    display: inline-block;
+    content: '\f10b';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 27px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+  }
+  a {
+    display: inline-block !important;
+    color: #fff !important;
+  }
+}
+
 .btn-grey {
   background-color: #494949;
   color: #fff;
@@ -39,7 +65,7 @@
 }
 
 .btn-green {
-  background-color: #72cd70;
+  background-color: #6faf57;
   color: #fff;
 
   &:hover {
@@ -88,18 +114,16 @@
       margin-bottom: 10px;
     }
   }
-
   .pull-right{
-    .btn{
+    @media(max-width: 768px){
+      float: none !important;
+      margin-top: 10px;
+    }
+    .btn {
       @media(max-width: 768px){
         display: block;
         margin-bottom: 10px;
       }
-    }
-
-    @media(max-width: 768px){
-      float: none !important;
-      margin-top: 10px;
     }
   }
 }

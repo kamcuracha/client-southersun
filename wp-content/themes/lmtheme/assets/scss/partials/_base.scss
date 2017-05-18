@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic|Raleway:400,600,700);
 @font-face {
   font-family: 'PoppinsRegular';
   src: url('../fonts/PoppinsRegular.eot');
@@ -33,6 +34,9 @@
   url('../fonts/PoppinsBold.woff') format('woff'),
   url('../fonts/PoppinsBold.ttf') format('truetype'),
   url('../fonts/PoppinsBold.svg#PoppinsBold') format('svg');
+}
+@-ms-viewport {
+  width: device-width;
 }
 .clearfix:before,
 .clearfix:after,
@@ -84,9 +88,6 @@
 .modal-footer:after {
   clear: both;
 }
-.center {
-  text-align: center;
-}
 .center-block {
   display: block;
   margin-left: auto;
@@ -120,9 +121,6 @@
 }
 .affix {
   position: fixed;
-}
-@-ms-viewport {
-  width: device-width;
 }
 ::selection {
   background-color: #2E6CAE; // CHANGETHIS

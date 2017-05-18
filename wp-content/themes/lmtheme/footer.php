@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col-sm-6 py3 text-left">
             <p>Newsletter be in the know.</p>
-            <a href="#" class="btn btn-flat btn-white mx2">Subscribe</a>
+            <a href="#" class="btn btn-white mx2">Subscribe</a>
         </div>
         <div class="col-sm-6 py3 text-right">
             <p>Stay connected</p>
@@ -42,8 +42,7 @@
               <h3 class="widget-title">Contact</h3>
               <ul class="widget-address">
                   <li>Southern Sun Financial Pty Ltd<br>
-                      14 Toorak Road, South Yarra 3141,<br>
-                      Melbourne Australia</li>
+                      14 Toorak Road, South Yarra 3141, Melbourne Australia</li>
                   <li>GPO Box 49, Melbourne VIC Australia</li>
                   <li>Phone: 1800 234 567</li>
                   <li>Fax: 1800 456 789</li>
