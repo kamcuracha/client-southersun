@@ -4839,270 +4839,76 @@ select[multiple].form-group-lg .form-control {
   display: block;
 }
 
-.icon-vision {
-  background: url(../images/icon-about-vision.png) no-repeat;
-  width: 48px;
-  height: 30px;
-  margin-top: 10px;
+.icon-service {
+  height: 122px;
 }
 
-.icon-values {
-  background: url(../images/icon-about-values.png) no-repeat;
-  width: 46px;
-  height: 43px;
-}
-
-.icon-development {
-  background: url(../images/icon-service-development.png) no-repeat;
-  width: 49px;
-  height: 46px;
-}
-
-.icon-planning {
-  background: url(../images/icon-service-planning.png) no-repeat;
-  width: 44px;
-  height: 47px;
-}
-
-.icon-feasibility {
-  background: url(../images/icon-service-feasibility.png) no-repeat;
-  width: 54px;
-  height: 53px;
-}
-
-.icon-marketing {
-  background: url(../images/icon-service-marketing.png) no-repeat;
-  width: 46px;
-  height: 43px;
-}
-
-.icon-funding {
-  background: url(../images/icon-service-funding.png) no-repeat;
-  width: 53px;
-  height: 52px;
-}
-
-.icon-team {
-  background: url(../images/icon-service-team.png) no-repeat;
-  width: 40px;
-  height: 40px;
-}
-
-.icon-selection {
-  background: url(../images/icon-service-selection.png) no-repeat;
-  width: 38px;
-  height: 49px;
-}
-
-.icon-faq {
+.icon-personal-finance {
   display: inline-block;
-  background-image: url("../images/icons/faq.png");
+  background-image: url("../images/icons/icon-personal-finance.png");
   background-repeat: no-repeat;
-  width: 62px;
-  height: 64px;
+  width: 166px;
+  height: 122px;
 }
 
-.icon-support {
+.icon-home-finance {
   display: inline-block;
-  background-image: url("../images/icons/support.png");
+  background-image: url("../images/icons/icon-home-finance.png");
   background-repeat: no-repeat;
-  width: 62px;
-  height: 64px;
+  width: 136px;
+  height: 105px;
 }
 
-.icon-comment {
+.icon-cflow-finance {
   display: inline-block;
-  background-image: url("../images/icons/comment.png");
+  background-image: url("../images/icons/icon-cflow-finance.png");
   background-repeat: no-repeat;
-  width: 70px;
-  height: 55px;
-  margin-bottom: -12px;
+  width: 144px;
+  height: 98px;
 }
 
-@media (max-width: 320px) {
-  .icon-comment {
-    display: block;
-    margin: 10px auto;
-  }
-}
-
-.icon-training {
+.icon-development-finance {
   display: inline-block;
-  background-image: url("../images/icons/training.png");
+  background-image: url("../images/icons/icon-development-finance.png");
   background-repeat: no-repeat;
-  width: 64px;
-  height: 64px;
+  width: 161px;
+  height: 120px;
 }
 
-.map-au {
-  display: inline-block;
-  background-image: url("../images/icons/map-au.png");
-  background-repeat: no-repeat;
-  width: 99px;
-  height: 92px;
-}
-
-.map-nz {
-  display: inline-block;
-  background-image: url("../images/icons/map-nz.png");
-  background-repeat: no-repeat;
-  width: 76px;
+.icon-home-about {
   height: 114px;
 }
 
-.icon-play {
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-left: 9px solid white;
-  border-bottom: 6px solid transparent;
+.icon-instant-approval {
   display: inline-block;
+  background-image: url("../images/icons/icon-instant-approval.png");
+  background-repeat: no-repeat;
+  width: 121px;
+  height: 114px;
 }
 
-.icon-play-inverted {
-  border-left-color: #056eb2;
-}
-
-.icon-play-c {
-  width: 30px;
-  height: 30px;
+.icon-total-flexible {
   display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  position: relative;
+  background-image: url("../images/icons/icon-total-flexible.png");
+  background-repeat: no-repeat;
+  width: 116px;
+  height: 112px;
 }
 
-.icon-play-c .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto !important;
-}
-
-.icon-more {
-  width: 40px;
-  height: 40px;
+.icon-upfront-fee {
   display: inline-block;
-  border-radius: 100%;
-  border: 1px solid #056eb2;
-  vertical-align: middle;
-  margin-right: 4px;
-  position: relative;
+  background-image: url("../images/icons/icon-upfront-fee.png");
+  background-repeat: no-repeat;
+  width: 121px;
+  height: 92px;
 }
 
-@media (max-width: 767px) {
-  .icon-more {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.icon-more:after,
-.icon-more:before {
-  width: 2px;
-  height: 16px;
-  display: block;
-  background: #056eb2;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.icon-more:before {
-  width: 16px;
-  height: 2px;
-}
-
-.detector-title .icon-more,
-.btn-readmore .icon-more {
-  background-color: #056eb2;
-}
-
-.detector-title .icon-more:after,
-.btn-readmore .icon-more:after {
-  display: none;
-}
-
-.detector-title .icon-more:before,
-.btn-readmore .icon-more:before,
-.detector-title .icon-more:after,
-.btn-readmore .icon-more:after {
-  background-color: #fff;
-}
-
-.detector-title.collapsed .icon-more,
-.btn-readmore.collapsed .icon-more {
-  background-color: transparent;
-}
-
-.detector-title.collapsed .icon-more:after,
-.btn-readmore.collapsed .icon-more:after {
-  display: block;
-}
-
-.detector-title.collapsed .icon-more:before,
-.btn-readmore.collapsed .icon-more:before,
-.detector-title.collapsed .icon-more:after,
-.btn-readmore.collapsed .icon-more:after {
-  background-color: #056eb2;
-}
-
-.btn-readmore-inverted {
-  color: #fff !important;
-}
-
-.btn-readmore-inverted .icon-more {
-  background: #fff !important;
-  background-color: #056eb2 !important;
-}
-
-.btn-readmore-inverted .icon-more:after,
-.btn-readmore-inverted .icon-more:before {
-  background-color: #fff !important;
-}
-
-.btn-readmore-inverted.collapsed .icon-more {
-  border-color: #fff !important;
-  background: transparent !important;
-}
-
-.btn-readmore-inverted.collapsed .icon-more:after,
-.btn-readmore-inverted.collapsed .icon-more:before {
-  border-color: transparent !important;
-}
-
-.device-signal {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: url("../images/signal.png") no-repeat;
-  float: right;
-  margin-right: 9em;
-}
-
-@media (max-width: 1199px) {
-  .device-signal {
-    margin-right: 5em;
-  }
-}
-
-.icon-check {
-  border: 3px solid #ec9b00;
-  border-radius: 100%;
-  width: 28px;
-  height: 28px;
-  background-color: #fff;
-  padding: 0;
-  display: block;
-  position: absolute;
-  right: -5px;
-  z-index: 1;
+.icon-line-credit {
+  display: inline-block;
+  background-image: url("../images/icons/icon-line-credit.png");
+  background-repeat: no-repeat;
+  width: 109px;
+  height: 95px;
 }
 
 .navbar {
@@ -6115,12 +5921,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section .section-heading {
   position: relative;
-  z-index: 1;
   text-align: center;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 14px;
   padding-bottom: 20px;
   width: 90%;
 }
@@ -6171,8 +5975,57 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-top: 14px;
 }
 
+.section-partners {
+  background-color: #fafafa;
+}
+
+.section-call2action {
+  background: url("../images/bg-call2action.jpg") no-repeat right center fixed;
+  background-size: 74%;
+}
+
+.section-call2action:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #6faf57;
+  background: -webkit-linear-gradient(left, #6faf57, transparent);
+  background: linear-gradient(to right, #6faf57, transparent);
+}
+
 .section-services {
   background-color: #fafafa;
+}
+
+.section-services .service {
+  background: #fff;
+  border: solid 1px #e3e3e3;
+  border-radius: 2px;
+  min-height: 280px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.section-services .service-link {
+  background-color: #6faf57;
+  border-radius: 50%;
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.section-services .service-link:hover {
+  text-decoration: none;
+}
+
+.section-services .service .arrow-right:before {
+  display: block;
+  padding-top: 16px;
+  content: '\f178';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  color: #fff;
 }
 
 .section-review .rating-link {
@@ -6183,12 +6036,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-size: 21px;
 }
 
+.section-review p {
+  font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
+}
+
 .section-review .review-by {
+  font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
 .section-review .review-title {
   font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   color: #6faf57;
 }
 
@@ -6227,6 +6086,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .section-newsletter i.fa-stack-2x {
   color: #fff;
   font-size: 2.4em;
+}
+
+.section-newsletter .social-icons a:hover {
+  text-decoration: none;
 }
 
 .section-blue {

@@ -5,12 +5,10 @@
 
   .section-heading {
     position: relative;
-    z-index: 1;
     text-align: center;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 14px;
     padding-bottom: 20px;
     width: 90%;
 
@@ -116,8 +114,55 @@
 //  }
 //}
 
+.section-partners {
+  background-color: #fafafa;
+}
+
+.section-call2action {
+  background: url('../images/bg-call2action.jpg') no-repeat right center fixed;
+  background-size: 74%;
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #6faf57;
+    background: linear-gradient(to right, #6faf57, transparent);
+  }
+}
+
 .section-services {
   background-color: #fafafa;
+
+  .service {
+    background: #fff;
+    border: solid 1px #e3e3e3;
+    border-radius: 2px;
+    min-height: 280px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.22);
+
+    &-link {
+      background-color: #6faf57;
+      border-radius: 50%;
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .arrow-right:before {
+      display: block;
+      padding-top: 16px;
+      content: '\f178';
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
 }
 
 .section-review {
@@ -127,11 +172,16 @@
   .rating-desc {
     font-size: 21px;
   }
+  p {
+    font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
+  }
   .review-by {
+    font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
   }
   .review-title {
     font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
     color: #6faf57;
   }
 }
@@ -168,6 +218,9 @@
       color: #fff;
       font-size: 2.4em;
     }
+  }
+  .social-icons a:hover {
+    text-decoration: none;
   }
 }
 

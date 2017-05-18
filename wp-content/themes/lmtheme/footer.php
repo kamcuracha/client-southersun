@@ -6,7 +6,7 @@
         </div>
         <div class="col-sm-6 py3 text-right">
             <p>Stay connected</p>
-            <ul>
+            <ul class="social-icons">
                 <li>
                     <a href="#" target="_blank">
                       <span class="fa-stack fa-lg">
