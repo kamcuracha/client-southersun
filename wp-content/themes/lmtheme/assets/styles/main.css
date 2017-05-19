@@ -6068,6 +6068,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background: linear-gradient(to right, #6faf57, transparent);
 }
 
+.section-call2action .container {
+  position: relative;
+}
+
 .section-services {
   background-color: #fafafa;
 }
@@ -8006,7 +8010,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;
   line-height: 1.1;
   color: inherit;
 }
@@ -8046,6 +8049,7 @@ h2,
 .h2,
 h3,
 .h3 {
+  font-family: "PoppinsBold", Helvetica, Arial, sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -8071,6 +8075,7 @@ h5,
 .h5,
 h6,
 .h6 {
+  font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
 }

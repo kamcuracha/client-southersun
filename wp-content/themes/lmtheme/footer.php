@@ -39,7 +39,7 @@
   <div class="container">
       <div class="col-sm-3">
           <div class="widget">
-              <h3 class="widget-title">Contact</h3>
+              <h4 class="widget-title">Contact</h4>
               <ul class="widget-address">
                   <li>Southern Sun Financial Pty Ltd<br>
                       14 Toorak Road, South Yarra 3141, Melbourne Australia</li>
@@ -52,7 +52,7 @@
       </div>
       <div class="col-sm-3">
           <div class="widget">
-              <h3 class="widget-title">About</h3>
+              <h4 class="widget-title">About</h4>
               <ul class="widget-links">
                   <li><a href="/">Our Story</a></li>
                   <li><a href="/">Our Team</a></li>
@@ -63,7 +63,7 @@
       </div>
       <div class="col-sm-3">
           <div class="widget">
-              <h3 class="widget-title">Legals</h3>
+              <h4 class="widget-title">Legals</h4>
               <ul class="widget-links">
                   <li><a href="/">Privacy</a></li>
                   <li><a href="/">Privacy Wealth Management</a></li>
@@ -74,7 +74,7 @@
       </div>
       <div class="col-sm-3">
           <div class="widget">
-              <h3 class="widget-title center">Apply in a few minutes</h3>
+              <h4 class="widget-title center">Apply in a few minutes</h4>
               <p class="center">Lock in your repayments<br>
                   Free no obligation quote<br>
                   Speak to a finance professional
