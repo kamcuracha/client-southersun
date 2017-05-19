@@ -2993,7 +2993,6 @@ jQuery(document).ready(function($) {
                     loop: true,
                     items: 1,
 					margin: 10,
-					autoHeight: true,
 					autoplay: true,
 					autoplayTimeout: 7000,
 					autoplayHoverPause: false,

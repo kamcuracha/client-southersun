@@ -3591,9 +3591,7 @@ body {
   display: inline-block;
   padding: 12px 30px;
   border-radius: 4px;
-  background-color: #fff;
   font-family: 'PoppinsSemiBold', Helvetica, Arial, sans-serif;
-  color: #494949;
   text-transform: uppercase;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -3646,14 +3644,32 @@ body {
   color: #fff !important;
 }
 
-.btn-grey {
-  background-color: #494949;
-  color: #fff;
+.btn-white {
+  background-color: #fff;
+  color: #494949;
 }
 
-.btn-grey:hover {
-  background-color: #313131;
-  color: #fff;
+.btn-white-v2 {
+  background-color: #fff;
+  color: #6faf57;
+}
+
+.btn-white-v2:hover {
+  color: #6faf57;
+}
+
+.btn-white-v2ext:after {
+  position: relative;
+  top: 1px;
+  left: 7px;
+  display: inline-block;
+  content: '\f138';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #6faf57;
 }
 
 .btn-green {
@@ -3663,16 +3679,6 @@ body {
 
 .btn-green:hover {
   background-color: #52b250;
-  color: #fff;
-}
-
-.btn-blue {
-  background-color: #2E6CAE;
-  color: #fff !important;
-}
-
-.btn-blue:hover {
-  background-color: #0F457F;
   color: #fff;
 }
 
@@ -6030,6 +6036,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #fafafa;
 }
 
+.section-partners .partner {
+  height: 100%;
+}
+
 .section-partners .partner-logo {
   position: relative;
   height: 76px;
@@ -6053,9 +6063,17 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-transform: uppercase;
 }
 
+.section-partners .partner-desc {
+  display: none;
+  position: relative;
+  margin-top: 0;
+  font-size: 14px;
+  color: #777;
+}
+
 .section-call2action {
-  background: url("../images/bg-call2action.jpg") no-repeat right center fixed;
-  background-size: 74%;
+  background: url("../images/bg-call2action.jpg") no-repeat left top fixed;
+  background-size: cover;
 }
 
 .section-call2action:before {
@@ -6070,6 +6088,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-call2action .container {
   position: relative;
+}
+
+.section-call2action h3 {
+  color: #fff;
+}
+
+.section-call2action p {
+  color: #fdd835;
 }
 
 .section-services {

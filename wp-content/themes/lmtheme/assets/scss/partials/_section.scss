@@ -117,6 +117,9 @@
 .section-partners {
   background-color: #fafafa;
 
+  .partner {
+    height: 100%;
+  }
   .partner-logo {
     position: relative;
     height: 76px;
@@ -136,11 +139,46 @@
     color: #6faf57;
     text-transform: uppercase;
   }
+  .partner-desc {
+    display: none;
+    position: relative;
+    margin-top: 0;
+    font-size: 14px;
+    color: #777;
+  }
+  //.partner:hover {
+  //  &:before {
+  //    position: absolute;
+  //    top: 0;
+  //    left: 0;
+  //    border: solid 1px #e3e3e3;
+  //    height: 270px;
+  //    width: 100%;
+  //    z-index: 1;
+  //    content: '';
+  //    margin-top: -20px;
+  //    margin-bottom: 39px;
+  //    overflow: visible;
+  //  }
+  //  .partner-desc {
+  //    position: absolute;
+  //    z-index: 9999;
+  //    bottom: 0;
+  //    margin-bottom: -94px;
+  //    display: block;
+  //    -webkit-animation-name: plogo-move;
+  //    animation-name: plogo-move;
+  //    -webkit-animation-duration: 0.25s;
+  //    animation-duration: 0.25s;
+  //    -webkit-animation-timing-function: ease;
+  //    animation-timing-function: ease;
+  //  }
+  //}
 }
 
 .section-call2action {
-  background: url('../images/bg-call2action.jpg') no-repeat right center fixed;
-  background-size: 74%;
+  background: url('../images/bg-call2action.jpg') no-repeat left top fixed;
+  background-size: cover;
 
   &:before {
     position: absolute;
@@ -152,6 +190,12 @@
   }
   .container {
     position: relative;
+  }
+  h3 {
+    color: #fff;
+  }
+  p {
+    color: #fdd835;
   }
 }
 

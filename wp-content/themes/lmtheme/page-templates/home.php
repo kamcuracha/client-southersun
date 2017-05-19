@@ -10,7 +10,7 @@ get_header(); // Loads the header.php template. ?>
         <div class="masterhead-body-left">
             <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
             <p>Take control with an unsecured line of credit up to $100k</p>
-            <a href="#" class="btn btn-green">Find out more</a><a href="#" class="btn ml3">Apply Now</a>
+            <a href="#" class="btn btn-green">Find out more</a><a href="#" class="btn btn-white-v2 btn-white-v2ext ml3">Apply Now</a>
         </div>
         <div class="masterhead-body-right center p4">
             <h3>Apply in a few minutes</h3>
@@ -39,6 +39,10 @@ get_header(); // Loads the header.php template. ?>
                         <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
                     </div>
                     <p class="rating-reviews">1,014 Reviews</p>
+                    <div class="partner-desc">
+                        <p>Progressive is one of the largest auto insurers in the country and offers…</p>
+                        <a href="#">Read more</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-2">
@@ -131,9 +135,11 @@ get_header(); // Loads the header.php template. ?>
 <div class="section section-call2action">
     <div class="container">
         <div class="row py4">
-            <h3>Earn double quantas points on your frist Loan</h3>
-            <p>Plus 10,000 bonus points*</p>
-            <a href="#" class="btn btn-white">Apply Now</a>
+            <div class="col-sm-4">
+                <h3>Earn double quantas points on your frist Loan</h3>
+                <p>Plus 10,000 bonus points*</p>
+                <a href="#" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+            </div>
         </div>
     </div>
 </div>
@@ -255,7 +261,7 @@ get_header(); // Loads the header.php template. ?>
 		<div class="row py4 center">
 			<h3>Guiding you toward a truly successful financial future</h3>
             <p>Take the next steps with Southern Sun Finance</p>
-            <a href="#" class="btn btn-white mx2">Talk to Us</a>
+            <a href="#" class="btn btn-white-v2 mx2">Talk to Us</a>
 		</div>
 	</div>
 </div>
