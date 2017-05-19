@@ -213,14 +213,38 @@ get_header(); // Loads the header.php template. ?>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review1.png" alt="">
             </div>
             <div class="col-sm-7">
-                <blockquote>
-                    <div class="review-details">
-                        <h3>Saved money... Agent was exceptional!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div class="review-by">— John Doe. Victoria</div>
-                        <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                <div class="owl-carousel">
+                    <div class="item">
+                        <blockquote>
+                            <div class="review-details">
+                                <h3>1Saved money... Agent was exceptional!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="review-by">— John Doe. Victoria</div>
+                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                            </div>
+                        </blockquote>
                     </div>
-                </blockquote>
+                    <div class="item">
+                        <blockquote>
+                            <div class="review-details">
+                                <h3>2Saved money... Agent was exceptional!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="review-by">— John Doe. Victoria</div>
+                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="item">
+                        <blockquote>
+                            <div class="review-details">
+                                <h3>3Saved money... Agent was exceptional!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="review-by">— John Doe. Victoria</div>
+                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

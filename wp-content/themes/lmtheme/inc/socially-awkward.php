@@ -54,7 +54,7 @@ function stargazer_register_styles() {
 	wp_enqueue_style( 'font-main', 'https://fonts.googleapis.com/css?family=Roboto:100,300,400' );
 	wp_register_style( 'theme-mediaelement', trailingslashit( get_template_directory_uri() ) . 'assets/styles/main.css' );
 	
-	if ( is_page_template( 'page-templates/about-page.php' ) || is_front_page() ) {
+	if ( is_front_page() ) {
 		
 		wp_register_style( 'owl-carousel', trailingslashit( get_template_directory_uri() ) . 'assets/scripts/plugins/assets/owl.carousel.min.css' );
 		wp_register_style( 'owl-carousel-theme', trailingslashit( get_template_directory_uri() ) . 'assets/scripts/plugins/assets/owl.theme.default.min.css' );
@@ -74,37 +74,26 @@ function socially_awkward_enqueue_scripts() {
 		'modernizr',
 		hybrid_locate_theme_file( array( 'assets/scripts/vendor/modernizr-2.8.3.min.js' ) ),
 		array( 'jquery' ),
-		'20130812',
+		'20170519',
 		false
 	);
-
 
 	if ( is_page_template( 'page-templates/contact-page.php' ) ) {
 		wp_enqueue_script(
 			'map-api',
 			'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCXH-RFBwLvCrKGrCOxKxDsbAU9HF5RMwU',
 			array( 'jquery' ),
-			'20130812',
+			'20170519',
 			true
 		);
-
 	}
 
-    wp_enqueue_script(
-		'plugins',
-		hybrid_locate_theme_file( array( 'assets/scripts/all.js' ) ),
-		array( 'jquery' ),
-		'20130812',
-		true
-	);
-
-
-	if ( is_page_template( 'page-templates/projects-page.php' ) ) {
+	elseif ( is_page_template( 'page-templates/projects-page.php' ) ) {
 		wp_enqueue_script(
 			'project',
 			hybrid_locate_theme_file( array( 'assets/scripts/all-project.js' ) ),
 			array( 'jquery' ),
-			'20130812',
+			'20170519',
 			true
 		);
 	}
@@ -114,10 +103,30 @@ function socially_awkward_enqueue_scripts() {
 			'about',
 			hybrid_locate_theme_file( array( 'assets/scripts/all-about.js' ) ),
 			array( 'jquery' ),
-			'20130812',
+			'20170519',
 			true
 		);
 	}
+	
+	
+	if ( is_front_page() ) {
+		wp_enqueue_script(
+			'owl-carousel',
+			hybrid_locate_theme_file( array( 'assets/scripts/plugins/owl.carousel.min.js' ) ),
+			array( 'jquery' ),
+			'20170519',
+			true
+		);
+	}
+	
+	
+	wp_enqueue_script(
+		'plugins',
+		hybrid_locate_theme_file( array( 'assets/scripts/all.js' ) ),
+		array( 'jquery' ),
+		'20130812',
+		true
+	);
 
 }
 
