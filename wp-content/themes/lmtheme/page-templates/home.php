@@ -5,58 +5,78 @@
 
 get_header(); // Loads the header.php template. ?>
 
-<!--<div id="top" class="section section-vshape-bottom">-->
-<!--  <div class="masterhead">-->
-<!--    <div class="container">-->
-<!--      <div class="masterhead-intro animatedParent" data-sequence="500">-->
-<!--        <div class="animated growIn go" data-id="1">-->
-<!--          <div class="h2 white">Welcome to</div>-->
-<!--          <div class="h1">--><?php //echo get_bloginfo('name'); ?><!--</div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    --><?php //if ( has_post_thumbnail() ) : $post_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-<!--    <div class="masterhead-img" style="background-image: url('--><?php //echo $post_image[0]; ?>
-<?php //else: ?>
-<!--    <div class="masterhead-img" style="background-image: url('--><?php //echo get_template_directory_uri(); ?>
-<?php //endif; ?>
-<!--    <div class="masterhead-accent">-->
-<!--      <img class="accent accent1 move-right" src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/bg-banner-accent-1.png" alt="">-->
-<!--      <img class="accent accent2 move-right" src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/bg-banner-accent-2.png" alt="">-->
-<!--      <img class="accent accent3 move-right" src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/bg-banner-accent-3.png" alt="">-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!-- <?php if ( get_field('post_masterhead') ): ?>
-<div id="post-masterhead" class="section section-post-masterhead">
-  <div class="container">
-    <div class="section-heading copy animatedParent">
-      <p class="animated fadeInDownShort go" data-id="3"><?php echo the_field('post_masterhead'); ?></p>
+<div class="section section-masterhead masterhead-home">
+    <div class="container">
+        <div class="masterhead-body-left">
+            <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
+            <p>Take control with an unsecured line of credit up to $100k</p>
+            <a href="#" class="btn btn-green">Find out more</a><a href="#" class="btn ml3">Apply Now</a>
+        </div>
+        <div class="masterhead-body-right center p4">
+            <h3>Apply in a few minutes</h3>
+            <p>Lock in your repayments<br>
+                Free no obligation quote<br>
+                Speak to a finance professional
+                <span class="highlight">For assistance call:</span>
+                <span class="highlight2">1800 234 567</span>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
-<?php endif; ?>
-
-<?php if ( get_field('key_qualities') ): ?>
-<div id="pre-qualities" class="section section-pre-qualities">
-  <div class="container">
-    <div class="section-heading p0 copy animatedParent">
-      <h3 class="section-title white animated fadeInDownShort">Key Qualities</h3>
-
-      <p class="animated fadeInUpShort"><?php echo the_field('key_qualities'); ?></p>
-    </div>
-  </div>
-  <div class="arrow-up">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-main-prime-urban.png" alt="">
-  </div> 
-</div>
-<?php endif; ?> -->
 
 <div class="section section-partners">
     <div class="container">
-        <div class="row py4 center">
+        <div class="section-heading pt4">
             <h3>Our Insurance Partners</h3>
+        </div>
+        <div class="row pt3 pb4 center">
+            <div class="col-sm-2 col-sm-offset-2">
+                <div class="partner">
+                    <div class="partner-logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-fbaa.png" alt="" class="img-responsive center-block">
+                    </div>
+                    <div class="rating">
+                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
+                    </div>
+                    <p class="rating-reviews">1,014 Reviews</p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="partner">
+                    <div class="partner-logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-westpac.png" alt="" class="img-responsive center-block">
+                    </div>
+                    <div class="rating">
+                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
+                    </div>
+                    <p class="rating-reviews">558 Reviews</p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="partner">
+                    <div class="partner-logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-ssf.png" alt="" class="img-responsive center-block">
+                    </div>
+                    <div class="rating">
+                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                    </div>
+                    <p class="rating-reviews">1,321 Reviews</p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="partner">
+                    <div class="partner-logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-suncorp.png" alt="" class="img-responsive center-block">
+                    </div>
+                    <div class="rating">
+                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
+                    </div>
+                    <p class="rating-reviews">131 Reviews</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+                <a class="more-link" href="/partners">and more...</a>
+            </div>
         </div>
     </div>
 </div>

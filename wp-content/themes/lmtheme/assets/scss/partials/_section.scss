@@ -116,6 +116,26 @@
 
 .section-partners {
   background-color: #fafafa;
+
+  .partner-logo {
+    position: relative;
+    height: 76px;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .rating-reviews {
+    color: #6faf57;
+    text-transform: uppercase;
+  }
+  .more-link {
+    color: #6faf57;
+    text-transform: uppercase;
+  }
 }
 
 .section-call2action {
