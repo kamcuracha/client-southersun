@@ -5,33 +5,21 @@
             <a href="#" class="btn btn-white mx2">Subscribe</a>
         </div>
         <div class="col-sm-6 py3 text-right">
+            <?php if( have_rows('links', 'option') ): ?>
             <p>Stay connected</p>
             <ul class="social-icons">
+                <?php while( have_rows('links', 'option') ): the_row(); ?>
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="<?php the_sub_field('link'); ?>" target="_blank">
                       <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x"></i>
+                        <i class="fa fa-<?php the_sub_field('media'); ?> fa-stack-1x"></i>
                       </span>
                     </a>
                 </li>
-                <li>
-                    <a href="#" target="_blank">
-                      <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x"></i>
-                      </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                      <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                      </span>
-                    </a>
-                </li>
+                <?php endwhile; ?>
             </ul>
+            <?php endif; ?>
         </div>
     </div>
 </div>
@@ -87,7 +75,7 @@
 </footer>
 <footer class="section section-footer">
   <div class="container">
-    <div class="footer-center">Copyright &copy 2016-2017 <?php echo get_bloginfo( 'name' ); ?>. All rights reserved. Website by <a target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></div>
+    <div class="footer-center">Copyright &copy 2016-<?php echo date("Y") ?> <?php echo get_bloginfo( 'name' ); ?>. All rights reserved. Website by <a target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></div>
   </div>
 </footer>
 

@@ -91,7 +91,7 @@ get_header(); // Loads the header.php template. ?>
             <h3>Providing better and faster personal loans, lines of credit and money advances</h3>
             <p class="py2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div class="row py4">
+        <div class="row pt3 pb4">
             <div class="col-sm-3 mb3">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
@@ -144,65 +144,92 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
+<?php
+$args = array(
+    'posts_per_page' => 4,
+    'post_type' => 'service'
+);
+$services = new WP_Query($args);
+
+if ($services->have_posts()):
+?>
 <div class="section section-services">
     <div class="container">
         <div class="section-heading pt4">
-            <h3>Loans and Services</h3>
-            <p class="py2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#" class="btn btn-green mt0 mx2">Find out more</a>
+        <?php
+        $args_page = array(
+            'posts_per_page' => 1,
+            'post_type' => 'page',
+            'post_title' => 'Loans and Services'
+        );
+        $lands = new WP_Query($args_page);
+
+        if ($lands->have_posts()): $lands->the_post();
+        ?>
+            <h3><?php the_title(); ?></h3>
+            <p class="py2"><?php echo strip_tags(limit_string(get_the_content(), 160)); ?></p>
+            <a href="<?php the_permalink(); ?>" class="btn btn-green mt0 mx2">Find out more</a>
+        <?php endif; ?>
         </div>
         <div class="row py4">
+            <?php while($services->have_posts()): $services->the_post(); ?>
             <div class="col-sm-3 mb3">
                 <div class="service text-center p3">
                     <div class="icon-service py2">
+                        <?php if ( get_field('service_icon') ): ?>
+                        <i class="icon icon-<?php echo get_field('service_icon'); ?>"></i>
+                        <?php else: ?>
                         <i class="icon icon-personal-finance"></i>
+                        <?php endif; ?>
                     </div>
-                    <h4 class="py2">Personal Finance</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
-                    <a class="service-link" href="#">
+                    <h4 class="py2"><?php the_title(); ?></h4>
+                    <p><?php echo strip_tags(limit_string(get_the_content(), 54)); ?></p>
+                    <a class="service-link" href="<?php the_permalink(); ?>">
                         <span class="arrow-right"></span>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-3 mb3">
-                <div class="service text-center p3">
-                    <div class="icon-service py2">
-                        <i class="icon icon-home-finance"></i>
-                    </div>
-                    <h4 class="py2">Home Finance Business</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <a class="service-link" href="#">
-                        <span class="arrow-right"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3 mb3">
-                <div class="service text-center p3">
-                    <div class="icon-service py2">
-                        <i class="icon icon-cflow-finance"></i>
-                    </div>
-                    <h4 class="py2">Cash Flow Finance</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
-                    <a class="service-link" href="#">
-                        <span class="arrow-right"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3 mb3">
-                <div class="service text-center p3">
-                    <div class="icon-service py2">
-                        <i class="icon icon-development-finance"></i>
-                    </div>
-                    <h4 class="py2">Development Finance</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
-                    <a class="service-link" href="#">
-                        <span class="arrow-right"></span>
-                    </a>
-                </div>
-            </div>
+            <?php endwhile; ?>
+<!--            <div class="col-sm-3 mb3">-->
+<!--                <div class="service text-center p3">-->
+<!--                    <div class="icon-service py2">-->
+<!--                        <i class="icon icon-home-finance"></i>-->
+<!--                    </div>-->
+<!--                    <h4 class="py2">Home Finance Business</h4>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
+<!--                    <a class="service-link" href="#">-->
+<!--                        <span class="arrow-right"></span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-3 mb3">-->
+<!--                <div class="service text-center p3">-->
+<!--                    <div class="icon-service py2">-->
+<!--                        <i class="icon icon-cflow-finance"></i>-->
+<!--                    </div>-->
+<!--                    <h4 class="py2">Cash Flow Finance</h4>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>-->
+<!--                    <a class="service-link" href="#">-->
+<!--                        <span class="arrow-right"></span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-3 mb3">-->
+<!--                <div class="service text-center p3">-->
+<!--                    <div class="icon-service py2">-->
+<!--                        <i class="icon icon-development-finance"></i>-->
+<!--                    </div>-->
+<!--                    <h4 class="py2">Development Finance</h4>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>-->
+<!--                    <a class="service-link" href="#">-->
+<!--                        <span class="arrow-right"></span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 <div class="section section-review">
     <div class="container">

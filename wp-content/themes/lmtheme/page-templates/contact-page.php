@@ -5,40 +5,16 @@
 
 get_header(); // Loads the header.php template. ?>
 
-<div id="top" class="section section-vshape-bottom">
-  <div class="masterhead">
-    <div class="container">
-      <div class="masterhead-intro animatedParent" data-sequence="500">
-        <h2 class="h1 animated growIn go" data-id="1">
-          <?php echo get_the_title(); ?>
-        </h2>
-      </div>
-    </div>
-    <?php if ( has_post_thumbnail() ) : $post_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-    <div class="masterhead-img" style="background-image: url('<?php echo $post_image[0]; ?>');">
-    </div>
-    <?php else: ?>
-    <div class="masterhead-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-banner-contact.jpg');">
-    </div>
-    <?php endif; ?>
-    <div class="masterhead-accent">
-      <img class="accent accent1 move-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-banner-accent-1.png" alt="">
-      <img class="accent accent2 move-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-banner-accent-2.png" alt="">
-      <img class="accent accent3 move-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-banner-accent-3.png" alt="">
-    </div>
-  </div>
-</div>
-
-    <div id="contact-us" class="section section-contact-us">
+<div id="contact-us" class="section section-contact-us">
   <div class="container">
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-            <div class="row animatedParent">
-                <div class="col-sm-6 animated fadeInLeft">
+            <div class="row">
+                <div class="col-sm-6">
                     <h2>Contact Form</h2>
                     <?php echo do_shortcode('[formidable id=2]'); ?>
                 </div>
-                <div class="col-sm-6 animated fadeInRight">
+                <div class="col-sm-6">
                     <div class="contact-details">
                         <h2>Contact Details</h2>
                         <ul class="contact">
@@ -86,7 +62,5 @@ get_header(); // Loads the header.php template. ?>
     </div>
   </div>
 </div>
-
-
 
 <?php get_footer(); // Loads the footer.php template. ?>
