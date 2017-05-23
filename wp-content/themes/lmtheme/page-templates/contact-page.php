@@ -5,7 +5,7 @@
 
 get_header(); // Loads the header.php template. ?>
 
-<div id="contact-us" class="section section-contact-us">
+<div id="contact-us" class="section section-content section-contact-us">
   <div class="container">
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">

@@ -47,6 +47,10 @@
   }
 }
 
+.section-content {
+  margin-top: 100px;
+}
+
 //.section-title {
 //  font-family: "PoppinsBold", Helvetica, Arial, sans-serif;
 //  font-size: 27px;
@@ -299,7 +303,9 @@
     text-decoration: none;
   }
   .col-sm-12 {
-    text-align: center;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
 }
 

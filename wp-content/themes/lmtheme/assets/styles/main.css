@@ -3287,7 +3287,6 @@ body {
   background-color: #fff;
   max-height: 540px;
   height: 525px;
-  margin-top: 100px;
 }
 
 .section-masterhead:before {
@@ -6057,6 +6056,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-top: 14px;
 }
 
+.section-content {
+  margin-top: 100px;
+}
+
 .section-partners {
   background-color: #fafafa;
 }
@@ -6233,8 +6236,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-decoration: none;
 }
 
-.section-newsletter .col-sm-12 {
-  text-align: center;
+@media (max-width: 767px) {
+  .section-newsletter .col-sm-12 {
+    text-align: center;
+  }
 }
 
 .section-blue {

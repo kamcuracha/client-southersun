@@ -1,11 +1,3 @@
-<?php if($post_type == 'projects' ): ?>
-             
-    <?php if ( '' === locate_template( 'page-templates/projects-page.php', true, false ) )
-        include( 'page-templates/projects-page.php' );
-    ?>
-
-<?php else: ?>
-
 <?php get_header(); // Loads the header.php template. ?>
 
 <main <?php hybrid_attr( 'content' ); ?>>
@@ -74,5 +66,3 @@
 </main><!-- #content -->
 
 <?php get_footer(); // Loads the footer.php template. ?>
-
-<?php endif; ?>

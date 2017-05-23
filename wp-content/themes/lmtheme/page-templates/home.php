@@ -5,7 +5,7 @@
 
 get_header(); // Loads the header.php template. ?>
 
-<div class="section section-masterhead masterhead-home">
+<div class="section section-content section-masterhead masterhead-home">
     <div class="container">
         <div class="masterhead-body-left">
             <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
@@ -190,42 +190,6 @@ if ($services->have_posts()):
                 </div>
             </div>
             <?php endwhile; ?>
-<!--            <div class="col-sm-3 mb3">-->
-<!--                <div class="service text-center p3">-->
-<!--                    <div class="icon-service py2">-->
-<!--                        <i class="icon icon-home-finance"></i>-->
-<!--                    </div>-->
-<!--                    <h4 class="py2">Home Finance Business</h4>-->
-<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
-<!--                    <a class="service-link" href="#">-->
-<!--                        <span class="arrow-right"></span>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-sm-3 mb3">-->
-<!--                <div class="service text-center p3">-->
-<!--                    <div class="icon-service py2">-->
-<!--                        <i class="icon icon-cflow-finance"></i>-->
-<!--                    </div>-->
-<!--                    <h4 class="py2">Cash Flow Finance</h4>-->
-<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>-->
-<!--                    <a class="service-link" href="#">-->
-<!--                        <span class="arrow-right"></span>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-sm-3 mb3">-->
-<!--                <div class="service text-center p3">-->
-<!--                    <div class="icon-service py2">-->
-<!--                        <i class="icon icon-development-finance"></i>-->
-<!--                    </div>-->
-<!--                    <h4 class="py2">Development Finance</h4>-->
-<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>-->
-<!--                    <a class="service-link" href="#">-->
-<!--                        <span class="arrow-right"></span>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
     </div>
 </div>

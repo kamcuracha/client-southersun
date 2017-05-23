@@ -157,7 +157,7 @@ function hybrid_attr_footer( $attr ) {
 function hybrid_attr_content( $attr ) {
 
 	$attr['id']       = 'content';
-	$attr['class']    = 'content';
+	$attr['class']    = 'content section-content';
 	$attr['role']     = 'main';
 	$attr['itemprop'] = 'mainContentOfPage';
 
