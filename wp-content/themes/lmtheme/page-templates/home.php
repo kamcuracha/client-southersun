@@ -10,9 +10,9 @@ get_header(); // Loads the header.php template. ?>
         <div class="masterhead-body-left">
             <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
             <p>Take control with an unsecured line of credit up to $100k</p>
-            <a href="#" class="btn btn-green">Find out more</a><a href="#" class="btn btn-white-v2 btn-white-v2ext ml3">Apply Now</a>
+            <a href="#" class="btn btn-green mr3">Find out more</a><a href="#" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
         </div>
-        <div class="masterhead-body-right center p4">
+        <div class="masterhead-body-right center">
             <h3>Apply in a few minutes</h3>
             <p>Lock in your repayments<br>
                 Free no obligation quote<br>

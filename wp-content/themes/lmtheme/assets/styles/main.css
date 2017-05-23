@@ -3287,6 +3287,7 @@ body {
   background-color: #fff;
   max-height: 540px;
   height: 525px;
+  margin-top: 100px;
 }
 
 .section-masterhead:before {
@@ -3302,15 +3303,38 @@ body {
 
 .section-masterhead .masterhead-body-left {
   position: absolute;
-  width: 36%;
+  width: 40%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .section-masterhead .masterhead-body-left {
+    top: 45%;
+    width: 56%;
+  }
+  .section-masterhead .masterhead-body-left p {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-masterhead .masterhead-body-left {
+    width: 100%;
+    top: 50%;
+  }
+}
+
 .section-masterhead .masterhead-title {
   font-size: 50px;
+}
+
+@media (max-width: 767px) {
+  .section-masterhead .masterhead-title {
+    font-size: 30px;
+  }
 }
 
 .section-masterhead .masterhead-title emp {
@@ -3322,6 +3346,26 @@ body {
   margin-top: 10%;
   float: right;
   color: #fff;
+  padding: 4em;
+}
+
+@media (max-width: 991px) {
+  .section-masterhead .masterhead-body-right {
+    padding: 3em 1em;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-masterhead .masterhead-body-right {
+    padding: 1em;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-masterhead .masterhead-body-right {
+    visibility: hidden;
+  }
 }
 
 .section-masterhead .masterhead-body-right:before {
