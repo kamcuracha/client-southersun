@@ -5744,6 +5744,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .btn-badge {
     text-align: center;
     border-radius: 0;
+    background-color: #fff !important;
+  }
+  .btn-badge:before, .btn-badge a {
+    color: #6faf57 !important;
   }
 }
 
@@ -5782,7 +5786,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     margin: 0;
     padding-top: 12px;
     padding-bottom: 10px;
-    color: #333;
+    color: #fff;
     text-align: center;
   }
   .navbar-fixed-top .container .navbar-nav > li .btn {
@@ -5790,7 +5794,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     border-color: #fff !important;
   }
   .navbar-fixed-top .container .navbar-nav .active a {
-    color: #898989;
+    color: #555555;
   }
   .navbar-shrink .navbar-fixed-top {
     padding-top: 12px;
@@ -5807,8 +5811,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media (max-width: 767px) {
   .navbar-fixed-top .container .navbar-holder {
     padding: 0px 15px 0px;
+    border-bottom: solid 1px #e3e3e3;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 1px;
   }
   .navbar-fixed-top .container .navbar-nav > li {
+    background-color: #6faf57;
     width: 100% !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.21);
     margin: 0;
@@ -6058,6 +6065,58 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-content {
   margin-top: 100px;
+}
+
+.section-contact-us .contact {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.section-contact-us .contact li {
+  color: #898989;
+}
+
+.section-contact-us .contact i {
+  color: #333;
+}
+
+.section-contact-us .contact span {
+  display: table;
+  position: relative;
+  top: -20px;
+  left: 20px;
+}
+
+.section-contact-us .contact a {
+  color: #333;
+}
+
+.section-contact-us .contact a:hover {
+  text-decoration: none;
+}
+
+.section-contact-us .contact a:hover span {
+  border-bottom: none;
+}
+
+.section-contact-us .contact a span {
+  border-bottom: solid 1px #333;
+}
+
+.section-contact-us label {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .section-contact-us .frm_forms {
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: 991px) {
+  .section-contact-us .contact-details {
+    float: right;
+  }
 }
 
 .section-partners {

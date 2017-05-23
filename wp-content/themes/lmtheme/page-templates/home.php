@@ -10,7 +10,7 @@ get_header(); // Loads the header.php template. ?>
         <div class="masterhead-body-left">
             <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
             <p>Take control with an unsecured line of credit up to $100k</p>
-            <a href="#" class="btn btn-green mr3">Find out more</a><a href="#" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+            <a href="/about-us/"" class="btn btn-green mr3">Find out more</a><a href="#" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
         </div>
         <div class="masterhead-body-right center">
             <h3>Apply in a few minutes</h3>
@@ -252,7 +252,7 @@ if ($services->have_posts()):
 		<div class="row py4 center">
 			<h3>Guiding you toward a truly successful financial future</h3>
             <p>Take the next steps with Southern Sun Finance</p>
-            <a href="#" class="btn btn-white-v2 mx2">Talk to Us</a>
+            <a href="/contact-us/" class="btn btn-white-v2 mx2">Talk to Us</a>
 		</div>
 	</div>
 </div>

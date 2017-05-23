@@ -42,9 +42,9 @@
           <div class="widget">
               <h4 class="widget-title">About</h4>
               <ul class="widget-links">
-                  <li><a href="/">Our Story</a></li>
-                  <li><a href="/">Our Team</a></li>
-                  <li><a href="/">Blog</a></li>
+                  <li><a href="/about-us#story">Our Story</a></li>
+                  <li><a href="/about-us#team">Our Team</a></li>
+                  <li><a href="/blog">Blog</a></li>
                   <li><a href="/contact-us">Contact Us</a></li>
               </ul>
           </div>
@@ -53,10 +53,10 @@
           <div class="widget">
               <h4 class="widget-title">Legals</h4>
               <ul class="widget-links">
-                  <li><a href="/">Privacy</a></li>
-                  <li><a href="/">Privacy Wealth Management</a></li>
-                  <li><a href="/">FAQ's</a></li>
-                  <li><a href="/">Terms & Conditions of Site</a></li>
+                  <li><a href="/privacy">Privacy</a></li>
+                  <li><a href="/privacy-wealth">Privacy Wealth Management</a></li>
+                  <li><a href="/faq">FAQ's</a></li>
+                  <li><a href="/terms">Terms & Conditions of Site</a></li>
               </ul>
           </div>
       </div>
