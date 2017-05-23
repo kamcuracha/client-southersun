@@ -242,10 +242,10 @@ if ($services->have_posts()):
             <p class="rating-desc py2">99% of our reviewers recommend Answer Financial</p>
         </div>
         <div class="row">
-            <div class="col-sm-3 col-sm-offset-1">
+            <div class="col-sm-5 col-md-3 col-md-offset-1 hidden-xs">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review1.png" alt="">
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7 col-md-7">
                 <div class="owl-carousel">
                     <div class="item">
                         <blockquote>

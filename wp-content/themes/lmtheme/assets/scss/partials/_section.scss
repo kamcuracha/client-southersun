@@ -241,6 +241,10 @@
   }
   p {
     font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      display: none;
+    }
   }
   .review-by {
     font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
@@ -250,6 +254,11 @@
     font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;
     font-size: 18px;
     color: #6faf57;
+  }
+  .owl-carousel {
+    @media (max-width: 767px) {
+      margin-bottom: 3em;
+    }
   }
 }
 
@@ -288,6 +297,9 @@
   }
   .social-icons a:hover {
     text-decoration: none;
+  }
+  .col-sm-12 {
+    text-align: center;
   }
 }
 

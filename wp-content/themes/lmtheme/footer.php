@@ -1,10 +1,10 @@
 <div class="section section-newsletter">
     <div class="container">
-        <div class="col-sm-6 py3 text-left">
+        <div class="col-sm-12 col-md-6 py3 text-left">
             <p>Newsletter be in the know.</p>
             <a href="#" class="btn btn-white mx2">Subscribe</a>
         </div>
-        <div class="col-sm-6 py3 text-right">
+        <div class="col-sm-12 col-md-6 py3 text-right">
             <?php if( have_rows('links', 'option') ): ?>
             <p>Stay connected</p>
             <ul class="social-icons">

@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c662f8f8-bf1a-4ef4-88fe-ac275d00ed54" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/styles/main.css" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/styles/main.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/styles/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php" afterPath="$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +22,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="93" column="30" lean-forward="false" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+            <state relative-caret-position="3927">
+              <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -30,18 +45,8 @@
       <file leaf-file-name="contact-page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-307">
+            <state relative-caret-position="340">
               <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_button.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -50,10 +55,42 @@
       <file leaf-file-name="_section.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="148" column="2" lean-forward="false" selection-start-line="148" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
+            <state relative-caret-position="149">
+              <caret line="244" column="4" lean-forward="false" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
               <folding>
-                <marker date="1495183520762" expanded="true" signature="468:488" ph="{...}" />
+                <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_reset.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="1624" column="1" lean-forward="false" selection-start-line="1624" selection-start-column="1" selection-end-line="1624" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_nav.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="683" column="21" lean-forward="false" selection-start-line="683" selection-start-column="21" selection-end-line="683" selection-end-column="21" />
+              <folding>
+                <marker date="1495501778254" expanded="true" signature="15764:15952" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -63,15 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>::</find>
-      <find>clearfix</find>
-      <find>::selec</find>
-      <find>helv</find>
-      <find>navbar-brand</find>
-      <find>o {</find>
-      <find>p {</find>
-      <find>poppins</find>
-      <find>pull-right</find>
       <find>.show</find>
       <find>max-width</find>
       <find>/*');</find>
@@ -93,6 +121,15 @@
       <find>btn-white</find>
       <find>apply now</find>
       <find>loans</find>
+      <find>roviding better and faster personal loans, lines of credit and money adva</find>
+      <find>newsle</find>
+      <find>section-review</find>
+      <find>singular</find>
+      <find>navbar-shrink</find>
+      <find>navbar-fixed-top</find>
+      <find>height: 60px;</find>
+      <find>navbar-collapse collapse</find>
+      <find>btn-badge</find>
     </findStrings>
     <replaceStrings>
       <replace>url('../f</replace>
@@ -109,20 +146,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_base.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_element.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_icon.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_masterhead.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_reset.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scripts/main.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_button.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_reset.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss" />
       </list>
     </option>
   </component>
@@ -158,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -408,6 +444,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,18 +546,19 @@
       <workItem from="1495046588848" duration="2198000" />
       <workItem from="1495066981122" duration="26719000" />
       <workItem from="1495154055280" duration="12907000" />
-      <workItem from="1495373847509" duration="8549000" />
+      <workItem from="1495373847509" duration="11118000" />
+      <workItem from="1495469825508" duration="4848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64246000" />
+    <option name="totallyTimeSpent" value="71663000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="754" extended-state="1" />
+    <frame x="-8" y="-8" width="1370" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26183206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26335877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -573,6 +611,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3927">
+          <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4148">
+          <caret line="244" column="4" lean-forward="false" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
+          <folding>
+            <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding />
@@ -583,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +663,7 @@
         <state relative-caret-position="2516">
           <caret line="148" column="2" lean-forward="false" selection-start-line="148" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
           <folding>
-            <marker date="1495183520762" expanded="true" signature="468:488" ph="{...}" />
+            <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -609,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="14" selection-end-line="82" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,7 +688,7 @@
         <state relative-caret-position="2329">
           <caret line="137" column="2" lean-forward="false" selection-start-line="137" selection-start-column="2" selection-end-line="137" selection-end-column="79" />
           <folding>
-            <marker date="1495183520762" expanded="true" signature="468:488" ph="{...}" />
+            <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -642,7 +712,7 @@
         <state relative-caret-position="12665">
           <caret line="745" column="21" lean-forward="false" selection-start-line="745" selection-start-column="21" selection-end-line="745" selection-end-column="21" />
           <folding>
-            <marker date="1495183520762" expanded="true" signature="468:488" ph="{...}" />
+            <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -665,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="97" lean-forward="false" selection-start-line="43" selection-start-column="97" selection-end-line="43" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +750,7 @@
         <state relative-caret-position="12665">
           <caret line="745" column="21" lean-forward="false" selection-start-line="745" selection-start-column="21" selection-end-line="745" selection-end-column="21" />
           <folding>
-            <marker date="1495183520762" expanded="true" signature="468:488" ph="{...}" />
+            <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -697,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,38 +832,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_icon.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14722">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="21" column="82" lean-forward="false" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="1253" column="27" lean-forward="false" selection-start-line="1253" selection-start-column="27" selection-end-line="1253" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -813,58 +853,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494999276016" expanded="true" signature="27:1266" ph="&lt;IfModule mod_deflate.c&gt;" />
-            <marker date="1494999276016" expanded="true" signature="1267:1472" ph="&lt;FilesMatch &quot;\.(html|htm|rtf|rtx|svg|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|TXT|XSD|XSL|XML)$&quot;&gt;" />
-            <marker date="1494999276016" expanded="true" signature="1473:1959" ph="&lt;FilesMatch &quot;\.(bmp|class|doc|docx|eot|exe|ico|webp|json|mdb|mpp|otf|_otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|pot|pps|ppt|pptx|svg|svgz|swf|tif|tiff|ttf|ttc|_ttf|wav|wri|woff|woff2|xla|xls|xlsx|xlt|xlw|BMP|CLASS|DOC|DOCX|EOT|EXE|ICO|WEBP|JSON|MDB|MPP|OTF|_OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|POT|PPS|PPT|PPTX|SVG|SVGZ|SWF|TIF|TIFF|TTF|TTC|_TTF|WAV|WRI|WOFF|WOFF2|XLA|XLS|XLSX|XLT|XLW)$&quot;&gt;" />
-            <marker date="1494999276016" expanded="true" signature="2003:2202" ph="&lt;IfModule mod_rewrite.c&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="148" column="2" lean-forward="false" selection-start-line="148" selection-start-column="4" selection-end-line="175" selection-end-column="5" />
-          <folding>
-            <marker date="1495183520762" expanded="true" signature="468:488" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="75" lean-forward="false" selection-start-line="77" selection-start-column="75" selection-end-line="77" selection-end-column="75" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="93" column="30" lean-forward="false" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+        <state relative-caret-position="3927">
+          <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/page-templates/contact-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="244" column="4" lean-forward="false" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
+          <folding>
+            <marker date="1495454644068" expanded="true" signature="468:488" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="1624" column="1" lean-forward="false" selection-start-line="1624" selection-start-column="1" selection-end-line="1624" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/lmtheme/assets/scss/partials/_nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="683" column="21" lean-forward="false" selection-start-line="683" selection-start-column="21" selection-end-line="683" selection-end-column="21" />
+          <folding>
+            <marker date="1495501778254" expanded="true" signature="15764:15952" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
