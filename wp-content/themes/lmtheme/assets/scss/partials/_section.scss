@@ -1,7 +1,6 @@
 .section {
   position: relative;
   padding: 0;
-  background-color: #fff;
 
   .section-heading {
     position: relative;
@@ -104,7 +103,16 @@
 
   }
   label {
-    margin-bottom: 0;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 12px;
+    color: #6faf57;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 1;
+  }
+  .frm_hidden_container label {
+    display: none;
   }
   .frm_forms {
     @media (max-width: 767px) {
@@ -280,7 +288,10 @@
   }
   ul {
     display: inline;
-
+    
+    @media (max-width: 767px) {
+      display: block;
+    }
     li {
       display: inline;
       margin-left: 12px;

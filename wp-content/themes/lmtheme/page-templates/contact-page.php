@@ -17,18 +17,15 @@ get_header(); // Loads the header.php template. ?>
 <div id="contact-us" class="section section-contact-us">
   <div class="container">
     <div class="row py3">
-        <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <h2>We're here to help</h2>
+            <p>Fill in your details and we’ll be in touch shortly.</p>
             <div class="row">
-                <h2>We're here to help</h2>
-                <p>Fill in your details and we’ll be in touch shortly.</p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 my3">
                     <?php echo do_shortcode('[formidable id=2]'); ?>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 my3">
                     <div class="contact-details">
-                        <h2></h2>
                         <ul class="contact">
 
                             <?php if ( get_field('phone') ): ?>
