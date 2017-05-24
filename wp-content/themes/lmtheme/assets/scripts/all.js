@@ -2978,12 +2978,9 @@ jQuery(document).ready(function($) {
         Global: {
             init: function() {
                 this.stickyNav();
-                if(location.pathname == "/")
-                    this.owlCarousel();
-
-                if(window.location.href.indexOf("contact-us") > -1) {
-                    this.gmap();
-                }
+                this.modalSubscribe();
+                if(location.pathname == "/") this.owlCarousel();
+                if(window.location.href.indexOf("contact-us") > -1) this.gmap();
             },
             stickyNav: function() {
                 $(window).scroll(function() {
@@ -3047,7 +3044,27 @@ jQuery(document).ready(function($) {
 				  codeAddress();
 
                 }
+            },
+            modalSubscribe: function() {
+                var modal = document.getElementById('modalSubs');
+                var btn = document.getElementById("modalBtn");
+                var span = document.getElementsByClassName("modalClose")[0];
+
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
             }
+
         }
     };
 

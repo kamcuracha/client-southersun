@@ -797,7 +797,7 @@ select[multiple].form-group-lg .form-control {
   /*max-width: 600px;*/
   margin: 2em auto;
 }
-.contact-form .frm_required, .contact-form .frm_error {
+.frm_required, .frm_error {
   color: red;
 }
 .contact-form .frm_error_style {
@@ -848,7 +848,7 @@ select[multiple].form-group-lg .form-control {
   background-color: transparent;
   border: none;
 }
-.contact-form .form-control {
+.form-control {
   margin-top: 15px;
   padding: 11px 18px 6px;
   font-size: 18px;

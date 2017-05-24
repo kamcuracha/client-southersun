@@ -319,4 +319,6 @@ function limit_string($string, $charlimit)
     {    
         return substr($string,'0',$charlimit-1).'...'; 
     } 
-} 
+}
+
+add_filter('newsletter_enqueue_style', '__return_false');

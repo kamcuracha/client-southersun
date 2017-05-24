@@ -10,7 +10,7 @@ get_header(); // Loads the header.php template. ?>
         <div class="masterhead-body-left">
             <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
             <p>Take control with an unsecured line of credit up to $100k</p>
-            <a href="/about-us/"" class="btn btn-green mr3">Find out more</a><a href="#" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+            <a href="/about-us/" class="btn btn-green mr3">Find out more</a><a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
         </div>
         <div class="masterhead-body-right center">
             <h3>Apply in a few minutes</h3>
@@ -39,10 +39,10 @@ get_header(); // Loads the header.php template. ?>
                         <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
                     </div>
                     <p class="rating-reviews">1,014 Reviews</p>
-                    <div class="partner-desc">
-                        <p>Progressive is one of the largest auto insurers in the country and offers…</p>
-                        <a href="#">Read more</a>
-                    </div>
+<!--                    <div class="partner-desc">-->
+<!--                        <p>Progressive is one of the largest auto insurers in the country and offers…</p>-->
+<!--                        <a href="#">Read more</a>-->
+<!--                    </div>-->
                 </div>
             </div>
             <div class="col-sm-2">
@@ -138,7 +138,7 @@ get_header(); // Loads the header.php template. ?>
             <div class="col-sm-4">
                 <h3>Earn double quantas points on your frist Loan</h3>
                 <p>Plus 10,000 bonus points*</p>
-                <a href="#" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+                <a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
             </div>
         </div>
     </div>
