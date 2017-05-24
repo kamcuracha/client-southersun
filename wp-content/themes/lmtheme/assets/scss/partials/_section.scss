@@ -76,16 +76,16 @@
     list-style-type: none;
 
     li {
-      color: #898989;
+      color: #333;
     }
     i {
-      color: #333;
+      color: #898989;
     }
     span {
       display: table;
       position: relative;
       top: -20px;
-      left: 20px;
+      left: 36px;
     }
     a {
       color: #333;
@@ -111,11 +111,11 @@
       padding-bottom: 27px;
     }
   }
-  .contact-details {
-    @media (min-width: 991px) {
-      float: right;
-    }
-  }
+  //.contact-details {
+  //  @media (min-width: 991px) {
+  //    float: right;
+  //  }
+  //}
 }
 
 .section-partners {

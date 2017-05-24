@@ -3776,6 +3776,21 @@ body {
   }
 }
 
+.hero-bg {
+  background-color: #424856;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1em 0 !important;
+}
+
+.hero-bg .hero-content {
+  padding: 60px 15%;
+}
+
+.hero-bg h1 {
+  color: #fff;
+}
+
 .rating .star {
   font-size: 24px;
   display: inline-block;
@@ -6127,18 +6142,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-contact-us .contact li {
-  color: #898989;
+  color: #333;
 }
 
 .section-contact-us .contact i {
-  color: #333;
+  color: #898989;
 }
 
 .section-contact-us .contact span {
   display: table;
   position: relative;
   top: -20px;
-  left: 20px;
+  left: 36px;
 }
 
 .section-contact-us .contact a {
@@ -6164,12 +6179,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media (max-width: 767px) {
   .section-contact-us .frm_forms {
     padding-bottom: 27px;
-  }
-}
-
-@media (min-width: 991px) {
-  .section-contact-us .contact-details {
-    float: right;
   }
 }
 

@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
                 this.stickyNav();
                 this.modalSubscribe();
                 if(location.pathname == "/") this.owlCarousel();
-                if(window.location.href.indexOf("contact-us") > -1) this.gmap();
+                // if(window.location.href.indexOf("contact-us") > -1) this.gmap();
             },
             stickyNav: function() {
                 $(window).scroll(function() {
@@ -50,14 +50,8 @@ jQuery(document).ready(function($) {
 						marker = new google.maps.Marker({
 							map: map,
 							position: results[0].geometry.location,
-							draggable: true
+							draggable: false
 						});
-						google.maps.event.addListener(marker, "dragend", function() {
-						  document.getElementById('lat').value = marker.getPosition().lat();
-						  document.getElementById('lng').value = marker.getPosition().lng();
-						});
-						document.getElementById('lat').value = marker.getPosition().lat();
-						document.getElementById('lng').value = marker.getPosition().lng();
 					  } else {
 						alert('Geocode was not successful for the following reason: ' + status);
 					  }
