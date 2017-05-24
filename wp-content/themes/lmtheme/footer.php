@@ -8,7 +8,7 @@
                 <div class="modal-content">
                     <span class="modalClose">&times;</span>
                     <div class="tnp tnp-subscription container-fluid">
-                        <form id="form_modalsubs" method="post" action="http://southern.sun/?na=s" onsubmit="return newsletter_check(this)">
+                        <form id="form_modalsubs" method="post" action="<?php echo get_site_url(); ?>/?na=s" onsubmit="return newsletter_check(this)">
                             <div class="form-group frm_form_field form-field tnp-f1ield tnp-f1ield-email"><label for="tnp_field_email" class="frm_primary_label">Email <span class="frm_required">*</span></label>
                                 <input class="tnp-email form-control" type="email" name="ne" required></div><br>
                             <div class="frm_submit tnp-fie1ld tnp-fie1ld-button"><input class="btn btn-green tnp-submit" type="submit" value="Subscribe">

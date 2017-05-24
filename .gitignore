@@ -2,3 +2,5 @@
 wp-content/plugins/
 
 wp-content/uploads/
+
+\.idea/
