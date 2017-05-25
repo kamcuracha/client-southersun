@@ -4810,14 +4810,8 @@ select[multiple].form-group-lg .form-control {
   }
 }
 
-.contact-form {
-  background-color: #e3e3e3;
-  border: solid 1px #e3e3e3;
-  border-radius: 4px;
-  padding: 1.2em 2em;
-}
-
 .frm_required, .frm_error {
+  font-size: x-small;
   color: red;
 }
 
@@ -5012,6 +5006,27 @@ select[multiple].form-group-lg .form-control {
 
 .form-message.is-success {
   display: block;
+}
+
+.styled-form {
+  background-color: #e3e3e3;
+  border: solid 1px #e3e3e3;
+  border-radius: 4px;
+  padding: 1.2em 2em;
+}
+
+.styled-form label {
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 12px;
+  color: #6faf57;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.styled-form .frm_hidden_container label {
+  display: none;
 }
 
 .icon-service {
@@ -6141,66 +6156,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-top: 100px;
 }
 
-.section-contact-us .contact {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.section-contact-us .contact li {
-  color: #333;
-}
-
-.section-contact-us .contact i {
-  color: #898989;
-}
-
-.section-contact-us .contact span {
-  display: table;
-  position: relative;
-  top: -20px;
-  left: 36px;
-}
-
-.section-contact-us .contact a {
-  color: #333;
-}
-
-.section-contact-us .contact a:hover {
-  text-decoration: none;
-}
-
-.section-contact-us .contact a:hover span {
-  border-bottom: none;
-}
-
-.section-contact-us .contact a span {
-  border-bottom: solid 1px #333;
-}
-
-.section-contact-us label {
-  position: absolute;
-  margin-top: 9px;
-  margin-left: 12px;
-  color: #6faf57;
-  font-weight: lighter;
-  font-size: 13px;
-  line-height: 1;
-}
-
-.section-contact-us .frm_hidden_container label {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .section-contact-us .frm_forms {
-    padding-bottom: 27px;
-  }
-}
-
-.section-partners {
-  background-color: #fafafa;
-}
-
 .section-partners .partner {
   height: 100%;
 }
@@ -6261,10 +6216,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-call2action p {
   color: #fdd835;
-}
-
-.section-services {
-  background-color: #fafafa;
 }
 
 .section-services .service {
@@ -6382,6 +6333,62 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media (max-width: 767px) {
   .section-newsletter .col-sm-12 {
     text-align: center;
+  }
+}
+
+.section-about-us h2 {
+  margin-bottom: 30px;
+}
+
+.section-about-us h4 {
+  color: #6faf57;
+}
+
+.section-about-us h4:before {
+  content: "\f054";
+  padding-right: 12px;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.section-contact-us .contact {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.section-contact-us .contact li {
+  color: #333;
+}
+
+.section-contact-us .contact i {
+  color: #898989;
+}
+
+.section-contact-us .contact span {
+  display: table;
+  position: relative;
+  top: -20px;
+  left: 36px;
+}
+
+.section-contact-us .contact a {
+  color: #333;
+}
+
+.section-contact-us .contact a:hover {
+  text-decoration: none;
+}
+
+.section-contact-us .contact a:hover span {
+  border-bottom: none;
+}
+
+.section-contact-us .contact a span {
+  border-bottom: solid 1px #333;
+}
+
+@media (max-width: 767px) {
+  .section-contact-us .frm_forms {
+    padding-bottom: 27px;
   }
 }
 
@@ -6664,7 +6671,6 @@ table th[class*="col-"] {
 
 .section-prefooter {
   position: relative;
-  background-color: #fafafa;
   padding-top: 4em;
   padding-bottom: 4em;
 }
@@ -8732,6 +8738,10 @@ svg {
 
 .bg-strip-blue .btn-primary {
   background-color: #003E66;
+}
+
+.bg-lgray {
+  background-color: #fafafa;
 }
 
 .bg-blue {

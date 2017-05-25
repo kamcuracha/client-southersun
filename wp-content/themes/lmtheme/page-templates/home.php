@@ -24,7 +24,7 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
-<div class="section section-partners">
+<div class="section section-partners bg-lgray">
     <div class="container">
         <div class="section-heading pt4">
             <h3>Our Insurance Partners</h3>
@@ -153,7 +153,7 @@ $services = new WP_Query($args);
 
 if ($services->have_posts()):
 ?>
-<div class="section section-services">
+<div class="section section-services bg-lgray">
     <div class="container">
         <div class="section-heading pt4">
         <?php

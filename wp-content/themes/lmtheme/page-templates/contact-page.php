@@ -22,7 +22,9 @@ get_header(); // Loads the header.php template. ?>
             <p>Fill in your details and we’ll be in touch shortly.</p>
             <div class="row">
                 <div class="col-sm-6 my3">
-                    <?php echo do_shortcode('[formidable id=2]'); ?>
+                    <div class="styled-form">
+                        <?php echo do_shortcode('[formidable id=2]'); ?>
+                    </div>
                 </div>
                 <div class="col-sm-6 my3">
                     <div class="contact-details">

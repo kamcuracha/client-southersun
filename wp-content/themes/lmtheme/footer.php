@@ -37,7 +37,7 @@
         </div>
     </div>
 </div>
-<footer class="section section-prefooter">
+<footer class="section section-prefooter bg-lgray">
   <div class="container">
       <div class="col-sm-3">
           <div class="widget">

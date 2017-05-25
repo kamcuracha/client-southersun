@@ -793,15 +793,8 @@ select[multiple].form-group-lg .form-control {
     padding-top: 6px;
   }
 }
-.contact-form {
-  //max-width: 600px;
-  //margin: 2em auto;
-  background-color: #e3e3e3;
-  border: solid 1px #e3e3e3;
-  border-radius: 4px;
-  padding: 1.2em 2em;
-}
 .frm_required, .frm_error {
+  font-size: x-small;
   color: red;
 }
 .contact-form .frm_error_style {
@@ -972,4 +965,23 @@ select[multiple].form-group-lg .form-control {
 }
 .form-message.is-success {
   display: block;
+}
+.styled-form {
+  background-color: #e3e3e3;
+  border: solid 1px #e3e3e3;
+  border-radius: 4px;
+  padding: 1.2em 2em;
+
+  label {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 12px;
+    color: #6faf57;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 1;
+  }
+  .frm_hidden_container label {
+    display: none;
+  }
 }
