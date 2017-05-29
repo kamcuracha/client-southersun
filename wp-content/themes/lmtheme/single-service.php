@@ -37,6 +37,40 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
+<?php
+$args = array(
+    'posts_per_page' => 4,
+    'post_type' => 'service'
+);
+$services = new WP_Query($args);
+
+if ($services->have_posts()):
+?>
+<div class="section section-services section-services-ext bg-lgray">
+    <div class="container">
+        <div class="row py4">
+            <?php while($services->have_posts()): $services->the_post(); ?>
+                <div class="col-sm-6 col-md-3 mb3">
+                    <div class="service text-center p3">
+                        <div class="icon-service py2">
+                            <?php if ( get_field('service_icon') ): ?>
+                                <i class="icon icon-<?php echo get_field('service_icon'); ?>"></i>
+                            <?php else: ?>
+                                <i class="icon icon-personal-finance"></i>
+                            <?php endif; ?>
+                        </div>
+                        <h4 class="py2"><?php the_title(); ?></h4>
+                        <a class="service-link" href="<?php the_permalink(); ?>">
+                            <span class="arrow-right"></span>
+                        </a>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
+
 <div class="section section-call2action2">
     <div class="container">
         <div class="row py4">

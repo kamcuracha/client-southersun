@@ -30,7 +30,7 @@ get_header(); // Loads the header.php template. ?>
             <h3>Our Insurance Partners</h3>
         </div>
         <div class="row pt3 pb4 center">
-            <div class="col-sm-2 col-sm-offset-2">
+            <div class="col-sm-3 col-md-2 col-md-offset-2">
                 <div class="partner">
                     <div class="partner-logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-fbaa.png" alt="" class="img-responsive center-block">
@@ -45,7 +45,7 @@ get_header(); // Loads the header.php template. ?>
 <!--                    </div>-->
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-3 col-md-2">
                 <div class="partner">
                     <div class="partner-logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-westpac.png" alt="" class="img-responsive center-block">
@@ -56,7 +56,7 @@ get_header(); // Loads the header.php template. ?>
                     <p class="rating-reviews">558 Reviews</p>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-3 col-md-2">
                 <div class="partner">
                     <div class="partner-logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-ssf.png" alt="" class="img-responsive center-block">
@@ -67,7 +67,7 @@ get_header(); // Loads the header.php template. ?>
                     <p class="rating-reviews">1,321 Reviews</p>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-3 col-md-2">
                 <div class="partner">
                     <div class="partner-logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-suncorp.png" alt="" class="img-responsive center-block">
@@ -78,7 +78,7 @@ get_header(); // Loads the header.php template. ?>
                     <p class="rating-reviews">131 Reviews</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-sm-offset-3">
+            <div class="col-md-6 col-md-offset-3">
                 <a class="more-link" href="/partners">and more...</a>
             </div>
         </div>
@@ -92,7 +92,7 @@ get_header(); // Loads the header.php template. ?>
             <p class="py2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="row pt3 pb4">
-            <div class="col-sm-3 mb3">
+            <div class="col-sm-6 col-md-3 mb3">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
                         <i class="icon icon-instant-approval"></i>
@@ -101,7 +101,7 @@ get_header(); // Loads the header.php template. ?>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
                 </div>
             </div>
-            <div class="col-sm-3 mb3">
+            <div class="col-sm-6 col-md-3 mb3">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
                         <i class="icon icon-total-flexible"></i>
@@ -110,7 +110,7 @@ get_header(); // Loads the header.php template. ?>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
                 </div>
             </div>
-            <div class="col-sm-3 mb3">
+            <div class="col-sm-6 col-md-3 mb3">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
                         <i class="icon icon-upfront-fee"></i>
@@ -119,7 +119,7 @@ get_header(); // Loads the header.php template. ?>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
                 </div>
             </div>
-            <div class="col-sm-3 mb3">
+            <div class="col-sm-6 col-md-3 mb3">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
                         <i class="icon icon-line-credit"></i>
@@ -173,7 +173,7 @@ if ($services->have_posts()):
         </div>
         <div class="row py4">
             <?php while($services->have_posts()): $services->the_post(); ?>
-            <div class="col-sm-3 mb3">
+            <div class="col-sm-6 col-md-3 mb3">
                 <div class="service text-center p3">
                     <div class="icon-service py2">
                         <?php if ( get_field('service_icon') ): ?>

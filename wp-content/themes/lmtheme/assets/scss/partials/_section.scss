@@ -159,8 +159,23 @@
     background: #fff;
     border: solid 1px #e3e3e3;
     border-radius: 2px;
-    min-height: 280px;
+    min-height: 290px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.22);
+
+    &:hover {
+      background: #6faf57;
+      border: solid 1px #6faf57;
+
+      .service-link {
+        background-color: #fff;
+      }
+      h4 {
+        color: #fff;
+      }
+      .arrow-right:before {
+        color: #6faf57;
+      }
+    }
 
     &-link {
       background-color: #6faf57;

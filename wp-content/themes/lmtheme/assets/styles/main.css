@@ -3853,6 +3853,10 @@ blockquote:after {
   content: "\201D";
 }
 
+#modalBtn {
+  cursor: pointer;
+}
+
 /* The Modal (background) */
 #modalSubs {
   display: none;
@@ -5079,12 +5083,29 @@ select[multiple].form-group-lg .form-control {
   height: 122px;
 }
 
+.section-services-ext .icon-service {
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background: #fafafa;
+  border: 1px solid #fafafa;
+}
+
 .icon-personal-finance {
   display: inline-block;
   background-image: url("../images/icons/icon-personal-finance.png");
   background-repeat: no-repeat;
   width: 166px;
   height: 122px;
+}
+
+.section-services-ext .icon-personal-finance {
+  background-image: url("../images/icons/icon-personal-finance2.png");
+  width: 89px;
+  height: 51px;
+  margin-top: 23px;
 }
 
 .icon-home-finance {
@@ -5095,6 +5116,14 @@ select[multiple].form-group-lg .form-control {
   height: 105px;
 }
 
+.section-services-ext .icon-home-finance {
+  background-image: url("../images/icons/icon-home-finance2.png");
+  width: 77px;
+  height: 65px;
+  margin-top: 12px;
+  margin-left: 9px;
+}
+
 .icon-cflow-finance {
   display: inline-block;
   background-image: url("../images/icons/icon-cflow-finance.png");
@@ -5103,12 +5132,26 @@ select[multiple].form-group-lg .form-control {
   height: 98px;
 }
 
+.section-services-ext .icon-cflow-finance {
+  background-image: url("../images/icons/icon-cflow-finance2.png");
+  width: 74px;
+  height: 52px;
+  margin-top: 21px;
+}
+
 .icon-development-finance {
   display: inline-block;
   background-image: url("../images/icons/icon-development-finance.png");
   background-repeat: no-repeat;
   width: 161px;
   height: 120px;
+}
+
+.section-services-ext .icon-development-finance {
+  background-image: url("../images/icons/icon-development-finance2.png");
+  width: 56px;
+  height: 68px;
+  margin-top: 12px;
 }
 
 .icon-home-about {
@@ -6268,8 +6311,25 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background: #fff;
   border: solid 1px #e3e3e3;
   border-radius: 2px;
-  min-height: 280px;
+  min-height: 290px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.section-services .service:hover {
+  background: #6faf57;
+  border: solid 1px #6faf57;
+}
+
+.section-services .service:hover .service-link {
+  background-color: #fff;
+}
+
+.section-services .service:hover h4 {
+  color: #fff;
+}
+
+.section-services .service:hover .arrow-right:before {
+  color: #6faf57;
 }
 
 .section-services .service-link {
