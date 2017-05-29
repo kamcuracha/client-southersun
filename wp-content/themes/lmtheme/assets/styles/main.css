@@ -3717,12 +3717,17 @@ body {
 
 .btn-green {
   background-color: #6faf57;
-  color: #fff;
+  color: #fff !important;
 }
 
 .btn-green:hover {
   background-color: #52b250;
   color: #fff;
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
 }
 
 .btn-lg {
@@ -3900,6 +3905,11 @@ blockquote:after {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.g-recaptcha {
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
 }
 
 .dropup,
@@ -5027,6 +5037,42 @@ select[multiple].form-group-lg .form-control {
 
 .styled-form .frm_hidden_container label {
   display: none;
+}
+
+.styled-box {
+  position: relative;
+  margin: 20px auto;
+}
+
+.styled-box > .frm_checkbox {
+  display: inline-block;
+}
+
+.styled-box > .frm_checkbox label {
+  display: block !important;
+  text-indent: -9999px;
+  position: relative;
+  margin: 0;
+  margin-right: 12px;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.styled-box > .frm_description {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.styled-box input[type=checkbox] {
+  height: 20px;
+  margin-top: 0;
+}
+
+.styled-box input[type=checkbox]:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .icon-service {
@@ -6336,18 +6382,59 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
-.section-about-us h2 {
+.section-about-us h2,
+.section-single-service h2 {
   margin-bottom: 30px;
 }
 
-.section-about-us h4 {
+.section-about-us h4,
+.section-single-service h4 {
   color: #6faf57;
 }
 
-.section-about-us h4:before {
+.section-about-us h4:before,
+.section-single-service h4:before {
   content: "\f054";
-  padding-right: 12px;
+  padding-right: 10px;
   font: normal normal normal 14px/1 FontAwesome;
+}
+
+.section-about-us ul,
+.section-single-service ul {
+  margin-top: -18px;
+  margin-bottom: 20px;
+}
+
+.section-about-us ul:before, .section-about-us ul:after,
+.section-single-service ul:before,
+.section-single-service ul:after {
+  content: " ";
+  display: table;
+}
+
+.section-about-us ul:after,
+.section-single-service ul:after {
+  clear: both;
+}
+
+.section-about-us li,
+.section-single-service li {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.section-about-us li:before,
+.section-single-service li:before {
+  content: "\f054";
+  color: #6faf57;
+  padding-right: 10px;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.section-about-us a,
+.section-single-service a {
+  color: #6faf57;
 }
 
 .section-contact-us .contact {
@@ -6941,7 +7028,8 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 
-.contact-form fieldset {
+.contact-form fieldset,
+.service-form fieldset {
   border: none;
   padding: 0;
 }

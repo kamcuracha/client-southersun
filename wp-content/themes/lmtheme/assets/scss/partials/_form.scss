@@ -985,3 +985,36 @@ select[multiple].form-group-lg .form-control {
     display: none;
   }
 }
+.styled-box {
+  position: relative;
+  margin: 20px auto;
+
+  > .frm_checkbox {
+    display: inline-block;
+
+    label {
+      display: block !important;
+      text-indent: -9999px;
+      position: relative;
+      margin: 0;
+      margin-right: 12px;
+      width: 20px;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+  > .frm_description {
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+  }
+  input[type=checkbox] {
+    height: 20px;
+    margin-top: 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

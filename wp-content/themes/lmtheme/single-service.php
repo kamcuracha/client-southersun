@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Us
+ * Template Name: Single Service
  */
 
 get_header(); // Loads the header.php template. ?>
@@ -13,24 +13,24 @@ get_header(); // Loads the header.php template. ?>
         <h1><?php echo get_the_title(); ?></h1>
     </div>
 </div>
-<div class="section section-pre-about bg-lgray">
+<div class="section bg-lgray">
     <div class="container">
         <div class="section-heading pt4">
-            <h3>About Southern Sun Finance</h3>
+            <h3><?php echo get_the_title(); ?></h3>
             <p class="py2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
 </div>
 
-<div class="section section-about-us">
+<div class="section section-single-service">
     <div class="container">
         <div class="row py4 my3">
-            <div class="col-sm-6 col-md-8"><?php echo apply_filters('the_content', $post->post_content); ?></div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-8"><?php echo apply_filters('the_content', $post->post_content); ?></div>
+            <div class="col-sm-4">
                 <div class="styled-form">
-                    <h3>Leave a message</h3>
-                    <?php echo do_shortcode('[formidable id=2]'); ?>
+                    <h3>Ready to get started?</h3>
+                    <?php echo do_shortcode('[formidable id=3]'); ?>
                 </div>
             </div>
         </div>

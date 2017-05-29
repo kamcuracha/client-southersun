@@ -109,3 +109,8 @@ blockquote {
   text-decoration: none;
   cursor: pointer;
 }
+
+.g-recaptcha {
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+}

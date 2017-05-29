@@ -83,7 +83,6 @@ jQuery(document).ready(function($) {
                     }
                 }
             }
-
         }
     };
 

@@ -3058,7 +3058,6 @@ jQuery(document).ready(function($) {
                     }
                 }
             }
-
         }
     };
 

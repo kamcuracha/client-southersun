@@ -81,12 +81,17 @@
 
 .btn-green {
   background-color: #6faf57;
-  color: #fff;
+  color: #fff !important;
 
   &:hover {
     background-color: #52b250;
     color: #fff;
   }
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
 }
 
 .btn-lg {
