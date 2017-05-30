@@ -2997,7 +2997,8 @@ jQuery(document).ready(function($) {
 					autoplay: true,
 					autoplayTimeout: 7000,
 					autoplayHoverPause: false,
-                    pagination: false
+                    autoHeight: true,
+                    pagination: true
                 });
             },
             gmap: function() {

@@ -199,29 +199,76 @@ if ($services->have_posts()):
 </div>
 <?php endif; ?>
 
+<!--<div class="section section-review">-->
+<!--    <div class="container">-->
+<!--        <div class="section-heading half pt4">-->
+<!--            <h3>Answer Financial Customer Reviews</h3>-->
+<!--            <div class="rating">-->
+<!--                <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>-->
+<!--            </div>-->
+<!--            <a class="rating-link" href="/reviews">6,714 Reviews</a>-->
+<!--            <p class="rating-desc py2">99% of our reviewers recommend Answer Financial</p>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-sm-5 col-md-3 col-md-offset-1 hidden-xs">-->
+<!--                <img class="img-responsive" src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/img-review1.png" alt="">-->
+<!--            </div>-->
+<!--            <div class="col-sm-7 col-md-7">-->
+<!--                <div class="owl-carousel">-->
+<!--                    <div class="item">-->
+<!--                        <blockquote>-->
+<!--                            <div class="review-details">-->
+<!--                                <h3>1Saved money... Agent was exceptional!</h3>-->
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+<!--                                <div class="review-by">— John Doe. Victoria</div>-->
+<!--                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>-->
+<!--                            </div>-->
+<!--                        </blockquote>-->
+<!--                    </div>-->
+<!--                    <div class="item">-->
+<!--                        <blockquote>-->
+<!--                            <div class="review-details">-->
+<!--                                <h3>2Saved money... Agent was exceptional!</h3>-->
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+<!--                                <div class="review-by">— John Doe. Victoria</div>-->
+<!--                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>-->
+<!--                            </div>-->
+<!--                        </blockquote>-->
+<!--                    </div>-->
+<!--                    <div class="item">-->
+<!--                        <blockquote>-->
+<!--                            <div class="review-details">-->
+<!--                                <h3>3Saved money... Agent was exceptional!</h3>-->
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+<!--                                <div class="review-by">— John Doe. Victoria</div>-->
+<!--                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>-->
+<!--                            </div>-->
+<!--                        </blockquote>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 <div class="section section-review">
     <div class="container">
-        <div class="section-heading half pt4">
-            <h3>Answer Financial Customer Reviews</h3>
-            <div class="rating">
-                <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
-            </div>
-            <a class="rating-link" href="/reviews">6,714 Reviews</a>
-            <p class="rating-desc py2">99% of our reviewers recommend Answer Financial</p>
+        <div class="section-heading pt4">
+            <h3>Testimonials</h3>
         </div>
-        <div class="row">
-            <div class="col-sm-5 col-md-3 col-md-offset-1 hidden-xs">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review1.png" alt="">
-            </div>
-            <div class="col-sm-7 col-md-7">
+        <div class="row pt2 pb4 center">
+            <div class="col-sm-10 col-sm-offset-1">
                 <div class="owl-carousel">
                     <div class="item">
                         <blockquote>
                             <div class="review-details">
                                 <h3>1Saved money... Agent was exceptional!</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="review-by">— John Doe. Victoria</div>
-                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                                <div class="review-user">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review-user.png" alt="" class="center-block">
+                                </div>
+                                <div class="review-by">John Doe. Victoria</div>
+<!--                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>-->
                             </div>
                         </blockquote>
                     </div>
@@ -230,8 +277,8 @@ if ($services->have_posts()):
                             <div class="review-details">
                                 <h3>2Saved money... Agent was exceptional!</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="review-by">— John Doe. Victoria</div>
-                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                                <div class="review-by">John Doe. Victoria</div>
+<!--                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>-->
                             </div>
                         </blockquote>
                     </div>
@@ -240,8 +287,8 @@ if ($services->have_posts()):
                             <div class="review-details">
                                 <h3>3Saved money... Agent was exceptional!</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="review-by">— John Doe. Victoria</div>
-                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                                <div class="review-by">John Doe. Victoria</div>
+<!--                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>-->
                             </div>
                         </blockquote>
                     </div>

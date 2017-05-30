@@ -221,9 +221,25 @@
       display: none;
     }
   }
+  .review-details h3 {
+    color: #6faf57;
+  }
+  .review-user {
+    border: solid 2px #6faf57;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    img {
+      height: 100px;
+    }
+  }
   .review-by {
     font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    font-size: smaller;
+    margin-top: 12px;
   }
   .review-title {
     font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;

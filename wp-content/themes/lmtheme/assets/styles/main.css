@@ -6391,9 +6391,27 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
+.section-review .review-details h3 {
+  color: #6faf57;
+}
+
+.section-review .review-user {
+  border: solid 2px #6faf57;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section-review .review-user img {
+  height: 100px;
+}
+
 .section-review .review-by {
   font-family: "PoppinsRegular", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-size: smaller;
+  margin-top: 12px;
 }
 
 .section-review .review-title {
