@@ -174,7 +174,7 @@
       .service-link {
         background-color: #fff;
       }
-      h4 {
+      h4, p {
         color: #fff;
       }
       .arrow-right:before {
@@ -204,6 +204,10 @@
       font-size: 18px;
       color: #fff;
     }
+
+    .home &:hover {
+      background-color: #FED910;
+    }
   }
 }
 
@@ -225,7 +229,7 @@
     color: #6faf57;
   }
   .review-user {
-    border: solid 2px #6faf57;
+    border: solid 4px #6faf57;
     border-radius: 50%;
     width: 100px;
     height: 100px;

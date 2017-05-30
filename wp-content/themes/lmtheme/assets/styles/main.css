@@ -3342,10 +3342,9 @@ body {
 
 .section-masterhead .masterhead-body-right {
   position: relative;
-  margin-top: 10%;
   float: right;
   color: #fff;
-  padding: 4em;
+  padding: 1.2em 2em;
 }
 
 @media (max-width: 991px) {
@@ -3379,8 +3378,31 @@ body {
   border-radius: 4px;
 }
 
+.section-masterhead .masterhead-body-right .styled-form {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.section-masterhead .masterhead-body-right fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-masterhead .masterhead-body-right .form-control {
+  padding: 20px 12px 10px;
+  min-height: inherit;
+}
+
+.section-masterhead .masterhead-body-right .frm_error_style,
+.section-masterhead .masterhead-body-right .frm_error {
+  display: none;
+}
+
 .section-masterhead span {
-  display: block;
   color: #fdd835;
 }
 
@@ -6339,7 +6361,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #fff;
 }
 
-.section-services .service:hover h4, .section-services .service.service-active h4 {
+.section-services .service:hover h4, .section-services .service:hover p, .section-services .service.service-active h4, .section-services .service.service-active p {
   color: #fff;
 }
 
@@ -6373,6 +6395,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #fff;
 }
 
+.home .section-services .service:hover {
+  background-color: #FED910;
+}
+
 .section-review .rating-link {
   color: #6faf57;
 }
@@ -6396,7 +6422,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-review .review-user {
-  border: solid 2px #6faf57;
+  border: solid 4px #6faf57;
   border-radius: 50%;
   width: 100px;
   height: 100px;

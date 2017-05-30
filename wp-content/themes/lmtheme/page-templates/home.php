@@ -12,14 +12,17 @@ get_header(); // Loads the header.php template. ?>
             <p>Take control with an unsecured line of credit up to $100k</p>
             <a href="/about-us/" class="btn btn-green mr3">Find out more</a><a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
         </div>
-        <div class="masterhead-body-right center">
-            <h3>Apply in a few minutes</h3>
-            <p>Lock in your repayments<br>
-                Free no obligation quote<br>
-                Speak to a finance professional
-                <span class="highlight">For assistance call:</span>
-                <span class="highlight2">1800 234 567</span>
-            </p>
+        <div class="masterhead-body-right">
+            <h3>Get In Touch</h3>
+<!--            <p>Lock in your repayments<br>-->
+<!--                Free no obligation quote<br>-->
+<!--                Speak to a finance professional-->
+<!--                <span class="highlight">For assistance call:</span>-->
+<!--                <span class="highlight2">1800 234 567</span>-->
+<!--            </p>-->
+            <div class="styled-form">
+                <?php echo do_shortcode('[formidable id=4]'); ?>
+            </div>
         </div>
     </div>
 </div>
