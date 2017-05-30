@@ -154,6 +154,11 @@
 }
 
 .section-services {
+  background-color: #6faf57;
+
+  .section-heading {
+    color: #fff;
+  }
   .service {
     background: #fff;
     border: solid 1px #e3e3e3;
@@ -176,7 +181,9 @@
         color: #6faf57;
       }
     }
-
+    p {
+      font-size: 15px;
+    }
     &-link {
       background-color: #6faf57;
       border-radius: 50%;
@@ -232,6 +239,12 @@
 
 .section-call2action2 {
   background-color: #6faf57;
+  color: #fff;
+}
+
+.section-b2c {
+  background: url('../images/bg-b2c.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
 }
 

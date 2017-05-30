@@ -6314,6 +6314,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #fdd835;
 }
 
+.section-services {
+  background-color: #6faf57;
+}
+
+.section-services .section-heading {
+  color: #fff;
+}
+
 .section-services .service {
   background: #fff;
   border: solid 1px #e3e3e3;
@@ -6337,6 +6345,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-services .service:hover .arrow-right:before, .section-services .service.service-active .arrow-right:before {
   color: #6faf57;
+}
+
+.section-services .service p {
+  font-size: 15px;
 }
 
 .section-services .service-link {
@@ -6398,6 +6410,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-call2action2 {
   background-color: #6faf57;
+  color: #fff;
+}
+
+.section-b2c {
+  background: url("../images/bg-b2c.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
 }
 

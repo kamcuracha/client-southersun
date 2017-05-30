@@ -132,17 +132,17 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
-<div class="section section-call2action">
-    <div class="container">
-        <div class="row py4">
-            <div class="col-sm-4">
-                <h3>Earn double quantas points on your frist Loan</h3>
-                <p>Plus 10,000 bonus points*</p>
-                <a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="section section-call2action">-->
+<!--    <div class="container">-->
+<!--        <div class="row py4">-->
+<!--            <div class="col-sm-4">-->
+<!--                <h3>Earn double quantas points on your frist Loan</h3>-->
+<!--                <p>Plus 10,000 bonus points*</p>-->
+<!--                <a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <?php
 $args = array(
@@ -153,7 +153,7 @@ $services = new WP_Query($args);
 
 if ($services->have_posts()):
 ?>
-<div class="section section-services bg-lgray">
+<div class="section section-services">
     <div class="container">
         <div class="section-heading pt4">
         <?php
@@ -168,7 +168,7 @@ if ($services->have_posts()):
         ?>
             <h3><?php the_title(); ?></h3>
             <p class="py2"><?php echo strip_tags(limit_string(get_the_content(), 160)); ?></p>
-            <a href="<?php the_permalink(); ?>" class="btn btn-green mt0 mx2">Find out more</a>
+            <a href="<?php the_permalink(); ?>" class="btn btn-white mt0 mx2">Find out more</a>
         <?php endif; ?>
         </div>
         <div class="row py4">
@@ -259,6 +259,18 @@ if ($services->have_posts()):
             <a href="/contact-us/" class="btn btn-white-v2 mx2">Talk to Us</a>
 		</div>
 	</div>
+</div>
+
+<div class="section section-b2c">
+    <div class="container">
+        <div class="row py4 center">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h3>Business to Customers</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php get_footer(); // Loads the footer.php template. ?>
