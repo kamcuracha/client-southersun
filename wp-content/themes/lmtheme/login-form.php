@@ -28,7 +28,7 @@ Theme My Login will always look in your theme's directory first, before using th
 
 		<?php do_action( 'login_form' ); ?>
 
-        <a href="/lostpassword/">Forgot password? </a>
+        <a href="/lostpassword/">Forgot password?</a>
 
         <input class="btn btn-green btn-block" type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Log In', 'theme-my-login' ); ?>" />
         <input type="hidden" name="redirect_to" value="<?php $template->the_redirect_url( 'login' ); ?>" />
