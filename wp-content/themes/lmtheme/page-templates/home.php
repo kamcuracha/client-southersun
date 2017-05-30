@@ -160,7 +160,7 @@ if ($services->have_posts()):
         $args_page = array(
             'posts_per_page' => 1,
             'post_type' => 'page',
-            'post_title' => 'Loans and Services'
+            'post_title_like' => 'Loans and Services'
         );
         $lands = new WP_Query($args_page);
 
@@ -183,7 +183,11 @@ if ($services->have_posts()):
                         <?php endif; ?>
                     </div>
                     <h4 class="py2"><?php the_title(); ?></h4>
+                    <?php if ( get_field('service_desc') ): ?>
+                    <p><?php echo get_field('service_desc'); ?></p>
+                    <?php else: ?>
                     <p><?php echo strip_tags(limit_string(get_the_content(), 54)); ?></p>
+                    <?php endif; ?>
                     <a class="service-link" href="<?php the_permalink(); ?>">
                         <span class="arrow-right"></span>
                     </a>
