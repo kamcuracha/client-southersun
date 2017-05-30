@@ -6539,6 +6539,29 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
+.section-login .styled-form {
+  border-radius: 4px 0 0 4px;
+}
+
+.section-login .bordered {
+  border: solid 1px #fafafa;
+  border-radius: 4px;
+}
+
+.section-login .form-control {
+  padding: 20px 12px 10px;
+  height: 54px;
+}
+
+.section-login input.btn {
+  border: none;
+}
+
+.section-login .mail-link {
+  color: #6faf57;
+  text-transform: uppercase;
+}
+
 .section-blue {
   background-color: #056eb2;
 }
