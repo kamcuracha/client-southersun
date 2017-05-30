@@ -6322,20 +6322,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.22);
 }
 
-.section-services .service:hover {
+.section-services .service:hover, .section-services .service.service-active {
   background: #6faf57;
   border: solid 1px #6faf57;
 }
 
-.section-services .service:hover .service-link {
+.section-services .service:hover .service-link, .section-services .service.service-active .service-link {
   background-color: #fff;
 }
 
-.section-services .service:hover h4 {
+.section-services .service:hover h4, .section-services .service.service-active h4 {
   color: #fff;
 }
 
-.section-services .service:hover .arrow-right:before {
+.section-services .service:hover .arrow-right:before, .section-services .service.service-active .arrow-right:before {
   color: #6faf57;
 }
 

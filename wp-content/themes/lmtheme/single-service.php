@@ -38,6 +38,9 @@ get_header(); // Loads the header.php template. ?>
 </div>
 
 <?php
+global $post;
+$pageid = $post->ID;
+
 $args = array(
     'posts_per_page' => 4,
     'post_type' => 'service'
@@ -51,7 +54,7 @@ if ($services->have_posts()):
         <div class="row py4">
             <?php while($services->have_posts()): $services->the_post(); ?>
                 <div class="col-sm-6 col-md-3 mb3">
-                    <div class="service text-center p3">
+                    <div class="service <?php echo ($pageid == get_the_ID())? 'service-active ': '';?>text-center p3">
                         <div class="icon-service py2">
                             <?php if ( get_field('service_icon') ): ?>
                                 <i class="icon icon-<?php echo get_field('service_icon'); ?>"></i>
