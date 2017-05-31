@@ -4,6 +4,7 @@ jQuery(document).ready(function($) {
             init: function() {
                 this.stickyNav();
                 this.modalSubscribe();
+                this.showFeature();
                 if(location.pathname == "/") this.owlCarousel();
                 if(window.location.href.indexOf("service") > -1) this.serviceAccordion();
                 // if(window.location.href.indexOf("contact-us") > -1) this.gmap();
@@ -84,6 +85,13 @@ jQuery(document).ready(function($) {
                         modal.style.display = "none";
                     }
                 }
+            },
+            showFeature: function() {
+                $(".feature-link").after().click(function () {
+                    $(".featurette").slideToggle( "fast", function() {
+                        console.log("Featurette toggled.");
+                    });
+                });
             },
             serviceAccordion: function() {
                 $(".accordion").accordion({
