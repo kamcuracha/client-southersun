@@ -10,7 +10,7 @@ get_header(); // Loads the header.php template. ?>
         <div class="masterhead-body-left">
             <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
             <p>Take control with an unsecured line of credit up to $100k</p>
-            <a href="/about-us/" class="btn btn-green mr3">Find out more</a><a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+            <a href="/about-us/" class="btn btn-green mr3">Find out more</a><a href="/login" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
         </div>
         <div class="masterhead-body-right center">
             <h3>Apply in a few minutes</h3>
@@ -140,7 +140,7 @@ get_header(); // Loads the header.php template. ?>
         <div class="row py4">
             <div class="col-sm-4">
                 <h3>Ask. Listen. Solve.</h3>
-                <a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+                <a href="/login" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
             </div>
         </div>
     </div>
@@ -170,7 +170,7 @@ if ($services->have_posts()):
         ?>
             <h3><?php the_title(); ?></h3>
             <p class="py2"><?php echo strip_tags(limit_string(get_the_content(), 160)); ?></p>
-            <a href="<?php the_permalink(); ?>" class="btn btn-white mt0 mx2">Find out more</a>
+            <a href="<?php the_permalink(); ?>" class="btn btn-green mt0 mx2">Find out more</a>
         <?php endif; ?>
         </div>
         <div class="row py4">

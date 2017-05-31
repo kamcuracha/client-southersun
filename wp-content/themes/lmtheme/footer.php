@@ -41,36 +41,56 @@
   <div class="container">
       <div class="col-sm-3">
           <div class="widget">
-              <h4 class="widget-title">Contact</h4>
+              <h4 class="widget-title">
+                  <a href="/">
+                      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-logo-ssf.png" alt="">
+                  </a>
+              </h4>
               <ul class="widget-address">
-                  <li>Southern Sun Financial Pty Ltd<br>
-                      14 Toorak Road, South Yarra 3141, Melbourne Australia</li>
-                  <li>GPO Box 49, Melbourne VIC Australia</li>
-                  <li>Phone: 1800 234 567</li>
-                  <li>Fax: 1800 456 789</li>
-                  <li>ABN 62 081 162 843 </li>
+                  <li>&copy; <?php echo date("Y") ?> <?php echo get_bloginfo( 'name' ); ?>.</li>
+                  <li>ABN 62 081 162 843</li>
+                  <li>ACL Number 654321</li>
+                  <li>Website by <a target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></li>
+                  <li class="my3">
+                      <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-footer-partners-fbaa.png" alt=""></a>
+                      <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-footer-partners-mfaa.png" alt=""></a>
+                  </li>
               </ul>
           </div>
       </div>
       <div class="col-sm-3">
           <div class="widget">
-              <h4 class="widget-title">About</h4>
+              <h4 class="widget-title">Quick Links</h4>
               <ul class="widget-links">
-                  <li><a href="/about-us#story">Our Story</a></li>
-                  <li><a href="/about-us#team">Our Team</a></li>
-                  <li><a href="/blog">Blog</a></li>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/login">Apply Now</a></li>
                   <li><a href="/contact-us">Contact Us</a></li>
+                  <li><a href="/privacy">Privacy Policy</a></li>
+                  <li><a href="/terms">Terms & Conditions</a></li>
               </ul>
           </div>
       </div>
       <div class="col-sm-3">
           <div class="widget">
-              <h4 class="widget-title">Legals</h4>
+              <h4 class="widget-title">Our Services</h4>
               <ul class="widget-links">
-                  <li><a href="/privacy">Privacy</a></li>
-                  <li><a href="/privacy-wealth">Privacy Wealth Management</a></li>
-                  <li><a href="/faq">FAQ's</a></li>
-                  <li><a href="/terms">Terms & Conditions of Site</a></li>
+                  <?php
+                  $args = array(
+                      'posts_per_page' => 4,
+                      'post_type' => 'service'
+                  );
+                  $services = new WP_Query($args);
+
+                  if ($services->have_posts()):
+                  ?>
+                        <?php while($services->have_posts()): $services->the_post(); ?>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php endwhile; ?>
+                  <?php endif; ?>
+<!--                  <li><a href="/privacy">Privacy</a></li>-->
+<!--                  <li><a href="/privacy-wealth">Privacy Wealth Management</a></li>-->
+<!--                  <li><a href="/faq">FAQ's</a></li>-->
+<!--                  <li><a href="/terms">Terms & Conditions of Site</a></li>-->
               </ul>
           </div>
       </div>
@@ -89,7 +109,7 @@
 </footer>
 <footer class="section section-footer">
   <div class="container">
-    <div class="footer-center">Copyright &copy 2016-<?php echo date("Y") ?> <?php echo get_bloginfo( 'name' ); ?>. All rights reserved. Website by <a target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></div>
+    <div class="footer-center">The new way to get a 'Better Deal'! <a href="/login" class="btn btn-white-v2 mx2">Get started</a></div>
   </div>
 </footer>
 
