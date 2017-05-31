@@ -50,7 +50,7 @@
                   <li>&copy; <?php echo date("Y") ?> <?php echo get_bloginfo( 'name' ); ?>.</li>
                   <li>ABN 62 081 162 843</li>
                   <li>ACL Number 654321</li>
-                  <li>Website by <a target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></li>
+                  <li>Website by <a class="lm-link" target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></li>
                   <li class="my3">
                       <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-footer-partners-fbaa.png" alt=""></a>
                       <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-footer-partners-mfaa.png" alt=""></a>

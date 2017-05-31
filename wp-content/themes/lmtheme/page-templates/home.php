@@ -27,7 +27,7 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
-<div class="section section-partners bg-lgray">
+<div class="section section-partners feature-link bg-lgray">
     <div class="container">
         <div class="section-heading pt4">
             <h3>Our Insurance Partners</h3>
@@ -83,6 +83,13 @@ get_header(); // Loads the header.php template. ?>
             </div>
             <div class="col-md-6 col-md-offset-3">
                 <a class="more-link" href="/partners">and more...</a>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="featurette py4">This some text<br>
+                    ...in anothere line
+                </div>
             </div>
         </div>
     </div>
