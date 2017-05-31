@@ -121,11 +121,9 @@ blockquote {
 
 .feature-link {
 
-  &:after {
+  span.added {
     display: block;
     cursor: pointer;
-    content: '\f078';
-    font: normal normal normal 14px/1 FontAwesome;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -136,7 +134,18 @@ blockquote {
     height: 25px;
     width: 50px;
     background: #fafafa;
-    z-index: 9999;
+    z-index: 1;
+
+    &:after {
+      content: '\f078';
+      font: normal normal normal 14px/1 FontAwesome;
+      vertical-align: top;
+    }
+    &.collapsed:after {
+      content: '\f077';
+      font: normal normal normal 14px/1 FontAwesome;
+      vertical-align: top;
+    }
   }
 }
 

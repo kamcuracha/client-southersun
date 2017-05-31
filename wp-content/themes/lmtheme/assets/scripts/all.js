@@ -3062,7 +3062,9 @@ jQuery(document).ready(function($) {
                 }
             },
             showFeature: function() {
-                $(".feature-link").after().click(function () {
+                $(".feature-link").append("<span class='added'></span>");
+                $("span.added").click(function () {
+                    $(this).toggleClass("collapsed");
                     $(".featurette").slideToggle( "fast", function() {
                         console.log("Featurette toggled.");
                     });

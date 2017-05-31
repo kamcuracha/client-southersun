@@ -3940,11 +3940,9 @@ blockquote:after {
   -webkit-transform-origin: left top;
 }
 
-.feature-link:after {
+.feature-link span.added {
   display: block;
   cursor: pointer;
-  content: '\f078';
-  font: normal normal normal 14px/1 FontAwesome;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -3955,7 +3953,19 @@ blockquote:after {
   height: 25px;
   width: 50px;
   background: #fafafa;
-  z-index: 9999;
+  z-index: 1;
+}
+
+.feature-link span.added:after {
+  content: '\f078';
+  font: normal normal normal 14px/1 FontAwesome;
+  vertical-align: top;
+}
+
+.feature-link span.added.collapsed:after {
+  content: '\f077';
+  font: normal normal normal 14px/1 FontAwesome;
+  vertical-align: top;
 }
 
 .featurette {
