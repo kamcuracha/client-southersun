@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
                 this.stickyNav();
                 this.modalSubscribe();
                 if(location.pathname == "/") this.owlCarousel();
+                if(window.location.href.indexOf("service") > -1) this.serviceAccordion();
                 // if(window.location.href.indexOf("contact-us") > -1) this.gmap();
             },
             stickyNav: function() {
@@ -83,6 +84,11 @@ jQuery(document).ready(function($) {
                         modal.style.display = "none";
                     }
                 }
+            },
+            serviceAccordion: function() {
+                $(".accordion").accordion({
+                    header: 'h4'
+                });
             }
         }
     };

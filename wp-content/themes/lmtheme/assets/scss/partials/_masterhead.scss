@@ -50,10 +50,10 @@
   }
   .masterhead-body-right {
     position: relative;
-    //margin-top: 10%;
+    margin-top: 10%;
     float: right;
     color: #fff;
-    padding: 1.2em 2em;
+    padding: 3em;
 
     @media (max-width: 991px) {
       padding: 3em 1em;
@@ -101,6 +101,7 @@
     }
   }
   span {
+    display: block;
     color: #fdd835;
 
     &.highlight {

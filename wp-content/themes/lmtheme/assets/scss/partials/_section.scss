@@ -131,7 +131,7 @@
 }
 
 .section-call2action {
-  background: url('../images/bg-call2action.jpg') no-repeat left top fixed;
+  background: url('../images/bg-call2action2.jpg') no-repeat left top fixed;
   background-size: cover;
 
   &:before {
@@ -146,6 +146,7 @@
     position: relative;
   }
   h3 {
+    font-size: 36px;
     color: #fff;
   }
   p {
@@ -156,9 +157,6 @@
 .section-services {
   background-color: #6faf57;
 
-  .section-heading {
-    color: #fff;
-  }
   .service {
     background: #fff;
     border: solid 1px #e3e3e3;
@@ -205,9 +203,9 @@
       color: #fff;
     }
 
-    .home &:hover {
-      background-color: #FED910;
-    }
+    //.home &:hover {
+    //  background-color: #FED910;
+    //}
   }
 }
 
@@ -354,6 +352,25 @@
     color: #6faf57;
   }
 
+}
+
+.section-single-service {
+  h2 {
+    display: none;
+  }
+  h4 {
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+    &.ui-accordion-header-active:before {
+      content: "\f078";
+    }
+  }
+  .ui-accordion-header-active h4:before {
+    content: "\f078";
+  }
 }
 
 .section-contact-us {

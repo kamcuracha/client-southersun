@@ -26,13 +26,13 @@ get_header(); // Loads the header.php template. ?>
 <div class="section section-single-service">
     <div class="container">
         <div class="row py4 my3">
-            <div class="col-sm-8"><?php echo apply_filters('the_content', $post->post_content); ?></div>
-            <div class="col-sm-4">
-                <div class="styled-form">
-                    <h3>Ready to get started?</h3>
-                    <?php echo do_shortcode('[formidable id=3]'); ?>
-                </div>
-            </div>
+            <div class="col-sm-12 accordion"><?php echo apply_filters('the_content', $post->post_content); ?></div>
+<!--            <div class="col-sm-4">-->
+<!--                <div class="styled-form">-->
+<!--                    <h3>Ready to get started?</h3>-->
+<!--                    --><?php //echo do_shortcode('[formidable id=3]'); ?>
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>

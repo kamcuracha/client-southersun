@@ -3342,9 +3342,10 @@ body {
 
 .section-masterhead .masterhead-body-right {
   position: relative;
+  margin-top: 10%;
   float: right;
   color: #fff;
-  padding: 1.2em 2em;
+  padding: 3em;
 }
 
 @media (max-width: 991px) {
@@ -3403,6 +3404,7 @@ body {
 }
 
 .section-masterhead span {
+  display: block;
   color: #fdd835;
 }
 
@@ -6310,7 +6312,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-call2action {
-  background: url("../images/bg-call2action.jpg") no-repeat left top fixed;
+  background: url("../images/bg-call2action2.jpg") no-repeat left top fixed;
   background-size: cover;
 }
 
@@ -6329,6 +6331,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-call2action h3 {
+  font-size: 36px;
   color: #fff;
 }
 
@@ -6338,10 +6341,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-services {
   background-color: #6faf57;
-}
-
-.section-services .section-heading {
-  color: #fff;
 }
 
 .section-services .service {
@@ -6393,10 +6392,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 18px;
   color: #fff;
-}
-
-.home .section-services .service:hover {
-  background-color: #FED910;
 }
 
 .section-review .rating-link {
@@ -6564,6 +6559,26 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .section-about-us a,
 .section-single-service a {
   color: #6faf57;
+}
+
+.section-single-service h2 {
+  display: none;
+}
+
+.section-single-service h4 {
+  cursor: pointer;
+}
+
+.section-single-service h4:focus {
+  outline: none;
+}
+
+.section-single-service h4.ui-accordion-header-active:before {
+  content: "\f078";
+}
+
+.section-single-service .ui-accordion-header-active h4:before {
+  content: "\f078";
 }
 
 .section-contact-us .contact {
