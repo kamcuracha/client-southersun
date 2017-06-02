@@ -13,9 +13,9 @@ get_header(); // Loads the header.php template. ?>
         <h1><?php echo get_the_title(); ?></h1>
     </div>
 </div>
-<div class="section bg-lgray <?php echo ( get_field('section_featurette') ) ? 'feature-link' : ''; ?>">
+<div class="section section-pre-content bg-lgray <?php echo ( get_field('section_featurette') ) ? 'feature-link' : ''; ?>">
     <div class="container">
-        <div class="section-heading pt4">
+        <div class="section-heading pt4 mb3">
             <h3><?php echo get_the_title(); ?></h3>
             <?php if ( get_field('service_pre_content') ): ?>
                 <?php echo get_field('service_pre_content'); ?>
@@ -24,7 +24,7 @@ get_header(); // Loads the header.php template. ?>
         <?php if ( get_field('section_featurette') ): ?>
         <div class="row center">
             <div class="col-sm-8 col-sm-offset-2">
-                <div class="featurette py4">
+                <div class="featurette pt2 pb4">
                     <?php echo get_field('section_featurette'); ?>
                 </div>
             </div>
