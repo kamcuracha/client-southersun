@@ -13,20 +13,23 @@ get_header(); // Loads the header.php template. ?>
         <h1><?php echo get_the_title(); ?></h1>
     </div>
 </div>
-<div class="section bg-lgray feature-link">
+<div class="section bg-lgray <?php echo ( get_field('section_featurette') ) ? 'feature-link' : ''; ?>">
     <div class="container">
         <div class="section-heading pt4">
             <h3><?php echo get_the_title(); ?></h3>
-            <p class="py2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <?php if ( get_field('service_pre_content') ): ?>
+                <?php echo get_field('service_pre_content'); ?>
+            <?php endif; ?>
         </div>
+        <?php if ( get_field('section_featurette') ): ?>
         <div class="row center">
             <div class="col-sm-8 col-sm-offset-2">
-                <div class="featurette py4">This some text<br>
-                    ...in anothere line
+                <div class="featurette py4">
+                    <?php echo get_field('section_featurette'); ?>
                 </div>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </div>
 
