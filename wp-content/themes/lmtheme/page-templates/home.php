@@ -8,9 +8,28 @@ get_header(); // Loads the header.php template. ?>
 <div class="section section-content section-masterhead masterhead-home">
     <div class="container">
         <div class="masterhead-body-left">
-            <h1 class="masterhead-title"><emp>Simple, flexible</emp><br>business finance</h1>
-            <p>Take control with an unsecured line of credit up to $100k</p>
-            <a href="/about-us/" class="btn btn-green mr3">Find out more</a><a href="/login" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+            <h1 class="masterhead-title">
+                <?php echo get_field('banner_title'); ?>
+            </h1>
+            <?php if(get_field('banner_body')) : ?>
+            <p><?php echo get_field('banner_body'); ?></p>
+            <?php endif; ?>
+            <?php if( have_rows('banner_button') ): $rowctr = 1; ?>
+                <?php while( have_rows('banner_button') ):
+                    the_row();
+                    $addclass = get_sub_field('button_class'); ?>
+
+                    <?php if($rowctr == 1):
+                        $addclass = get_sub_field('button_class')." mr3";
+                    endif; ?>
+
+                    <?php if(get_sub_field('button_class') == 'btn-white-v2ext'):
+                        $addclass = $addclass." btn-white-v2";
+                    endif; ?>
+
+                    <a href="<?php echo the_sub_field('link'); ?>" class="btn <?php echo $addclass; ?>"><?php the_sub_field('text'); ?></a>
+                <?php $rowctr++; endwhile; ?>
+            <?php endif; ?>
         </div>
         <div class="masterhead-body-right center">
             <h3>Apply in a few minutes</h3>
@@ -27,7 +46,7 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
-<div class="section section-partners feature-link bg-lgray">
+<div class="section section-partners bg-lgray <?php echo ( get_field('featurette') ) ? 'feature-link' : ''; ?>">
     <div class="container">
         <div class="section-heading pt4">
             <h3>Our Insurance Partners</h3>
@@ -85,60 +104,45 @@ get_header(); // Loads the header.php template. ?>
                 <a class="more-link" href="/partners">and more...</a>
             </div>
         </div>
-        <div class="row center">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="featurette py4">This some text<br>
-                    ...in anothere line
+        <?php if ( get_field('featurette') ): ?>
+            <div class="row center">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="featurette pt2 pb4">
+                        <?php echo get_field('featurette'); ?>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php endif; ?>
     </div>
 </div>
 
 <div class="section section-home-about">
     <div class="container">
+        <?php if(get_field('about_title')): ?>
         <div class="section-heading pt4">
-            <h3>Providing better and faster personal loans, lines of credit and money advances</h3>
-            <p class="py2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3><?php echo get_field('about_title'); ?></h3>
+            <?php if(get_field('about_desc')): ?>
+            <p class="py2"><?php echo get_field('about_desc'); ?></p>
+            <?php endif; ?>
         </div>
+        <?php endif; ?>
+        <?php if( have_rows('about_qualities') ): $rowctr = 1; ?>
         <div class="row pt3 pb4">
+<!--            <h3>--><?php //the_sub_field('quality'); ?><!--</h3>-->
+<!--            <p>--><?php //the_sub_field('description'); ?><!--</p>-->
+            <?php while( have_rows('about_qualities') ): the_row(); ?>
             <div class="col-sm-6 col-md-3 mb3">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
-                        <i class="icon icon-instant-approval"></i>
+                        <i class="icon icon-<?php the_sub_field('icon'); ?>"></i>
                     </div>
-                    <h4 class="py2">Instant approval</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
+                    <h4 class="py2"><?php the_sub_field('title'); ?></h4>
+                    <p><?php the_sub_field('body'); ?></p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb3">
-                <div class="home-about text-center p3">
-                    <div class="icon-home-about py2">
-                        <i class="icon icon-total-flexible"></i>
-                    </div>
-                    <h4 class="py2">Totally flexible</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 mb3">
-                <div class="home-about text-center p3">
-                    <div class="icon-home-about py2">
-                        <i class="icon icon-upfront-fee"></i>
-                    </div>
-                    <h4 class="py2">No upfront fees</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 mb3">
-                <div class="home-about text-center p3">
-                    <div class="icon-home-about py2">
-                        <i class="icon icon-line-credit"></i>
-                    </div>
-                    <h4 class="py2">Line of Credit</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporut.</p>
-                </div>
-            </div>
+            <?php $rowctr++; endwhile; ?>
         </div>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -178,7 +182,7 @@ if ($services->have_posts()):
             <h3><?php the_title(); ?></h3>
             <p class="py2"><?php echo strip_tags(limit_string(get_the_content(), 160)); ?></p>
             <a href="<?php the_permalink(); ?>" class="btn btn-green mt0 mx2">Find out more</a>
-        <?php endif; ?>
+        <?php endif; wp_reset_query(); ?>
         </div>
         <div class="row py4">
             <?php while($services->have_posts()): $services->the_post(); ?>
@@ -206,7 +210,7 @@ if ($services->have_posts()):
         </div>
     </div>
 </div>
-<?php endif; ?>
+<?php endif; wp_reset_query(); ?>
 
 <div class="section section-review">
     <div class="container">
@@ -218,45 +222,37 @@ if ($services->have_posts()):
             <a class="rating-link" href="/reviews">6,714 Reviews</a>
             <p class="rating-desc py2">99% of our reviewers recommend Answer Financial</p>
         </div>
+        <?php
+        $args = array(
+            'posts_per_page' => 3,
+            'post_type' => 'review'
+        );
+        $reviews = new WP_Query($args);
+
+        if ($reviews->have_posts()):
+        ?>
         <div class="row">
             <div class="col-sm-5 col-md-3 col-md-offset-1 hidden-xs">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review1.png" alt="">
             </div>
             <div class="col-sm-7 col-md-7">
                 <div class="owl-carousel">
+                    <?php while($reviews->have_posts()): $reviews->the_post(); ?>
                     <div class="item">
                         <blockquote>
                             <div class="review-details">
-                                <h3>1Saved money... Agent was exceptional!</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="review-by">— John Doe. Victoria</div>
-                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php echo strip_tags(limit_string(get_the_content(), 200)); ?></p>
+                                <div class="review-by">— <?php echo get_field('buyer'); ?>. <?php echo (get_field('location')) ? get_field('location') : ''; ?></div>
+                                <div class="review-title"><?php echo get_field('purchase_desc'); ?></div>
                             </div>
                         </blockquote>
                     </div>
-                    <div class="item">
-                        <blockquote>
-                            <div class="review-details">
-                                <h3>2Saved money... Agent was exceptional!</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="review-by">— John Doe. Victoria</div>
-                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <div class="item">
-                        <blockquote>
-                            <div class="review-details">
-                                <h3>3Saved money... Agent was exceptional!</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="review-by">— John Doe. Victoria</div>
-                                <div class="review-title">Purchased Home Insurance and reported savings of $600</div>
-                            </div>
-                        </blockquote>
-                    </div>
+                    <?php endwhile; ?>
                 </div>
             </div>
         </div>
+        <?php endif; wp_reset_query(); ?>
     </div>
 </div>
 
@@ -317,16 +313,19 @@ if ($services->have_posts()):
 	</div>
 </div>
 
+<?php if(get_field('pre_footer_title')) : ?>
 <div class="section section-b2c">
     <div class="container">
         <div class="row py4 center">
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                <h3>We’re 100% focused on clients.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                <h3><?php echo get_field('pre_footer_title'); ?></h3>
+                <?php if(get_field('pre_footer_body')): ?>
+                    <?php echo get_field('pre_footer_body'); ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 <?php get_footer(); // Loads the footer.php template. ?>
