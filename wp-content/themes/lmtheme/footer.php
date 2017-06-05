@@ -63,7 +63,7 @@
               <h4 class="widget-title">Quick Links</h4>
               <ul class="widget-links">
                   <li><a href="/about-us">About Us</a></li>
-                  <li><a href="/login">Apply Now</a></li>
+                  <li><a href="/contact-us">Apply Now</a></li>
                   <li><a href="/contact-us">Contact Us</a></li>
                   <li><a href="/privacy">Privacy Policy</a></li>
                   <li><a href="/terms">Terms & Conditions</a></li>
@@ -109,7 +109,7 @@
 </footer>
 <footer class="section section-footer">
   <div class="container">
-    <div class="footer-center">The new way to get a 'Better Deal'! <a href="/login" class="btn btn-white-v2 mx2">Get started</a></div>
+    <div class="footer-center">The new way to get a 'Better Deal'! <a href="/contact-us" class="btn btn-white-v2 mx2">Get started</a></div>
   </div>
 </footer>
 

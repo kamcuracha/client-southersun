@@ -151,7 +151,7 @@ get_header(); // Loads the header.php template. ?>
         <div class="row py4">
             <div class="col-sm-4">
                 <h3>Ask. Listen. Solve.</h3>
-                <a href="/login" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+                <a href="/contact-us" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
             </div>
         </div>
     </div>

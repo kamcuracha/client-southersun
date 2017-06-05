@@ -89,7 +89,7 @@ if ($services->have_posts()):
         <div class="row py4">
             <div class="col-sm-8 col-sm-offset-2">
                 <h3 class="inline-block mr3">Free to Sign Up. No Obligation to Borrow</h3>
-                <a href="/wp-login.php?action=register" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+                <a href="/contact-us" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
             </div>
         </div>
     </div>
