@@ -13,13 +13,12 @@ get_header(); // Loads the header.php template. ?>
         <h1><?php echo get_the_title(); ?></h1>
     </div>
 </div>
+
+<?php if ( get_field('pre_content') ): ?>
 <div class="section section-pre-content bg-lgray <?php echo ( get_field('featurette') ) ? 'feature-link' : ''; ?>">
     <div class="container">
         <div class="section-heading pt4 mb3">
-            <h3>About <?php echo get_bloginfo( 'name' ); ?></h3>
-            <?php if ( get_field('pre_content') ): ?>
-                <?php echo get_field('pre_content'); ?>
-            <?php endif; ?>
+            <?php echo get_field('pre_content'); ?>
         </div>
         <?php if ( get_field('featurette') ): ?>
             <div class="row center">
@@ -32,6 +31,7 @@ get_header(); // Loads the header.php template. ?>
         <?php endif; ?>
     </div>
 </div>
+<?php endif; ?>
 
 <div class="section section-about-us">
     <div class="container">

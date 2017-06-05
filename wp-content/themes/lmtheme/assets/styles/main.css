@@ -3813,7 +3813,7 @@ body {
 }
 
 .hero-bg .hero-content {
-  padding: 60px 15%;
+  padding: 100px 15%;
 }
 
 .hero-bg h1 {
@@ -5251,6 +5251,12 @@ select[multiple].form-group-lg .form-control {
   background-repeat: no-repeat;
   width: 109px;
   height: 95px;
+}
+
+.icon-arrowdown-svg {
+  content: '\f078';
+  font: normal normal normal 14px/1 FontAwesome;
+  vertical-align: top;
 }
 
 .navbar {
