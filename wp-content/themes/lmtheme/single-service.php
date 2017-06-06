@@ -81,17 +81,24 @@ if ($services->have_posts()):
         </div>
     </div>
 </div>
-<?php endif; ?>
+<?php endif; wp_reset_query(); ?>
 
-<div class="section section-call2action2">
-    <div class="container">
-        <div class="row py4">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h3 class="inline-block mr3">Free to Sign Up. No Obligation to Borrow</h3>
-                <a href="/contact-us" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+<?php if ( get_field('call2action_text') ): ?>
+    <div class="section section-call2action2">
+        <div class="container">
+            <div class="row py4">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3 class="inline-block mr3"><?php echo get_field('call2action_text'); ?></h3>
+                    <?php if(get_field('call2action_button_class')): ?>
+                        <?php $addclass = get_field('call2action_button_class'); if($addclass == 'btn-white-v2ext'):
+                            $addclass = $addclass." btn-white-v2";
+                        endif; ?>
+                        <a href="<?php echo (get_field('call2action_button_link')) ? get_field('call2action_button_link') : '/'; ?>" class="btn <?php echo $addclass; ?>"><?php echo (get_field('call2action_button_text')) ? get_field('call2action_button_text') : 'Get Started'; ?></a>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
 
 <?php get_footer(); // Loads the footer.php template. ?>

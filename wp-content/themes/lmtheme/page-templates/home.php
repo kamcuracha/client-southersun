@@ -23,7 +23,7 @@ get_header(); // Loads the header.php template. ?>
                         $addclass = get_sub_field('button_class')." mr3";
                     endif; ?>
 
-                    <?php if(get_sub_field('button_class') == 'btn-white-v2ext'):
+                    <?php if($addclass == 'btn-white-v2ext'):
                         $addclass = $addclass." btn-white-v2";
                     endif; ?>
 
@@ -146,16 +146,23 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
+<?php if ( get_field('call2action_text') ): ?>
 <div class="section section-call2action">
     <div class="container">
         <div class="row py4">
             <div class="col-sm-4">
-                <h3>Ask. Listen. Solve.</h3>
-                <a href="/contact-us" class="btn btn-white-v2 btn-white-v2ext">Apply Now</a>
+                <h3><?php echo get_field('call2action_text'); ?></h3>
+                <?php if(get_field('call2action_button_class')): ?>
+                    <?php $addclass = get_field('call2action_button_class'); if($addclass == 'btn-white-v2ext'):
+                        $addclass = $addclass." btn-white-v2";
+                    endif; ?>
+                    <a href="<?php echo (get_field('call2action_button_link')) ? get_field('call2action_button_link') : '/'; ?>" class="btn <?php echo $addclass; ?>"><?php echo (get_field('call2action_button_text')) ? get_field('call2action_button_text') : 'Get Started'; ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 <?php
 $args = array(
@@ -303,15 +310,22 @@ if ($services->have_posts()):
 <!--    </div>-->
 <!--</div>-->
 
+<?php if ( get_field('call2action2_text') ): ?>
 <div class="section section-call2action2">
 	<div class="container">
 		<div class="row py4 center">
-			<h3>Guiding you toward a truly successful financial future</h3>
-            <p>Take the next steps with Southern Sun Finance</p>
-            <a href="/contact-us/" class="btn btn-white-v2 mx2">Talk to Us</a>
+			<h3><?php echo get_field('call2action2_text'); ?></h3>
+            <p><?php echo get_field('call2action2_subtext'); ?></p>
+            <?php if(get_field('call2action2_button_class')): ?>
+                <?php $addclass = get_field('call2action2_button_class'); if($addclass == 'btn-white-v2ext'):
+                    $addclass = "btn-white-v2";
+                endif; ?>
+                <a href="<?php echo (get_field('call2action2_button_link')) ? get_field('call2action2_button_link') : '/'; ?>" class="btn <?php echo $addclass; ?>"><?php echo (get_field('call2action2_button_text')) ? get_field('call2action2_button_text') : 'Get Started'; ?></a>
+            <?php endif; ?>
 		</div>
 	</div>
 </div>
+<?php endif; ?>
 
 <?php if(get_field('pre_footer_title')) : ?>
 <div class="section section-b2c">
