@@ -87,23 +87,20 @@
                             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         <?php endwhile; ?>
                   <?php endif; ?>
-<!--                  <li><a href="/privacy">Privacy</a></li>-->
-<!--                  <li><a href="/privacy-wealth">Privacy Wealth Management</a></li>-->
-<!--                  <li><a href="/faq">FAQ's</a></li>-->
-<!--                  <li><a href="/terms">Terms & Conditions of Site</a></li>-->
               </ul>
           </div>
       </div>
       <div class="col-sm-3">
-          <div class="widget">
-              <h4 class="widget-title center">Apply in a few minutes</h4>
-              <p class="center">Lock in your repayments<br>
-                  Free no obligation quote<br>
-                  Speak to a finance professional
-                  <span class="highlight">For assistance call:</span>
-                  <span class="highlight2">1800 234 567</span>
-              </p>
-          </div>
+          <?php if( get_field('title', 'option') ): ?>
+              <div class="widget">
+                  <h4 class="widget-title center"><?php echo get_field('title', 'option'); ?></h4>
+                  <p class="center">
+                      <?php echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
+                      <?php echo (get_field('hightlight_sub', 'option')) ? '<span class="highlight">'.get_field('hightlight_sub', 'option').'</span>' : ''; ?>
+                      <?php echo (get_field('hightlight_main', 'option')) ? '<span class="highlight2">'.get_field('hightlight_main', 'option').'</span>' : ''; ?>
+                  </p>
+              </div>
+          <?php endif; ?>
       </div>
   </div>
 </footer>

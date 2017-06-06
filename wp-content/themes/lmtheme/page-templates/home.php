@@ -31,18 +31,16 @@ get_header(); // Loads the header.php template. ?>
                 <?php $rowctr++; endwhile; ?>
             <?php endif; ?>
         </div>
+        <?php if( get_field('title', 'option') ): ?>
         <div class="masterhead-body-right center">
-            <h3>Apply in a few minutes</h3>
-            <p>Lock in your repayments<br>
-                Free no obligation quote<br>
-                Speak to a finance professional
-                <span class="highlight">For assistance call:</span>
-                <span class="highlight2">1800 234 567</span>
+            <h3><?php echo get_field('title', 'option'); ?></h3>
+            <p>
+                <?php echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
+                <?php echo (get_field('hightlight_sub', 'option')) ? '<span class="highlight">'.get_field('hightlight_sub', 'option').'</span>' : ''; ?>
+                <?php echo (get_field('hightlight_main', 'option')) ? '<span class="highlight2">'.get_field('hightlight_main', 'option').'</span>' : ''; ?>
             </p>
-<!--            <div class="styled-form">-->
-<!--                --><?php //echo do_shortcode('[formidable id=4]'); ?>
-<!--            </div>-->
         </div>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -315,7 +313,7 @@ if ($services->have_posts()):
 	<div class="container">
 		<div class="row py4 center">
 			<h3><?php echo get_field('call2action2_text'); ?></h3>
-            <p><?php echo get_field('call2action2_subtext'); ?></p>
+            <?php echo (get_field('call2action2_subtext')) ? '<p>'.get_field('call2action2_subtext').'</p>' : ''; ?>
             <?php if(get_field('call2action2_button_class')): ?>
                 <?php $addclass = get_field('call2action2_button_class'); if($addclass == 'btn-white-v2ext'):
                     $addclass = "btn-white-v2";
