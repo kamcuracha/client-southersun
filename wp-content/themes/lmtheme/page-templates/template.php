@@ -24,8 +24,8 @@ get_header(); // Loads the header.php template. ?>
 
 <?php if ( get_field('call2action_text') ): ?>
     <div class="section section-call2action2">
-        <div class="container">
-            <div class="row py4">
+        <div class="container animatedParent">
+            <div class="row py4 animated fadeInDownShort">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h3 class="inline-block mr3"><?php echo get_field('call2action_text'); ?></h3>
                     <?php if(get_field('call2action_button_class')): ?>

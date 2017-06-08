@@ -6,8 +6,8 @@
 get_header(); // Loads the header.php template. ?>
 
 <div class="section section-content section-masterhead masterhead-home">
-    <div class="container">
-        <div class="masterhead-body-left">
+    <div class="container animatedParent">
+        <div class="masterhead-body-left animated fadeIn">
             <h1 class="masterhead-title">
                 <?php echo get_field('banner_title'); ?>
             </h1>
@@ -32,7 +32,7 @@ get_header(); // Loads the header.php template. ?>
             <?php endif; ?>
         </div>
         <?php if( get_field('title', 'option') ): ?>
-        <div class="masterhead-body-right center">
+        <div class="masterhead-body-right center animated fadeIn">
             <h3><?php echo get_field('title', 'option'); ?></h3>
             <p>
                 <?php echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
@@ -45,11 +45,11 @@ get_header(); // Loads the header.php template. ?>
 </div>
 
 <div class="section section-partners bg-lgray <?php echo ( get_field('featurette') ) ? 'feature-link' : ''; ?>">
-    <div class="container">
-        <div class="section-heading pt4">
+    <div class="container animatedParent">
+        <div class="section-heading pt4 animated fadeInDownShort">
             <h3>Our Insurance Partners</h3>
         </div>
-        <div class="row pt3 pb4 center">
+        <div class="row pt3 pb4 center animated fadeInUpShort">
             <div class="col-sm-3 col-md-2 col-md-offset-2">
                 <div class="partner">
                     <div class="partner-logo">
@@ -115,12 +115,12 @@ get_header(); // Loads the header.php template. ?>
 </div>
 
 <div class="section section-home-about">
-    <div class="container">
+    <div class="container animatedParent">
         <?php if(get_field('about_title')): ?>
         <div class="section-heading pt4">
-            <h3><?php echo get_field('about_title'); ?></h3>
+            <h3 class="animated fadeInDownShort"><?php echo get_field('about_title'); ?></h3>
             <?php if(get_field('about_desc')): ?>
-            <p class="py2"><?php echo get_field('about_desc'); ?></p>
+            <p class="py2 animated fadeInUpShort"><?php echo get_field('about_desc'); ?></p>
             <?php endif; ?>
         </div>
         <?php endif; ?>
@@ -128,8 +128,8 @@ get_header(); // Loads the header.php template. ?>
         <div class="row pt3 pb4">
 <!--            <h3>--><?php //the_sub_field('quality'); ?><!--</h3>-->
 <!--            <p>--><?php //the_sub_field('description'); ?><!--</p>-->
-            <?php while( have_rows('about_qualities') ): the_row(); ?>
-            <div class="col-sm-6 col-md-3 mb3">
+            <?php $sequence = 0; $dataid = 0; while( have_rows('about_qualities') ): the_row(); ?>
+            <div class="col-sm-6 col-md-3 mb3 animated fadeIn" data-id="<?php echo $dataid+=1; ?>" data-sequence="<?php echo $sequence+=300; ?>">
                 <div class="home-about text-center p3">
                     <div class="icon-home-about py2">
                         <i class="icon icon-<?php the_sub_field('icon'); ?>"></i>
@@ -146,8 +146,8 @@ get_header(); // Loads the header.php template. ?>
 
 <?php if ( get_field('call2action_text') ): ?>
 <div class="section section-call2action">
-    <div class="container">
-        <div class="row py4">
+    <div class="container animatedParent">
+        <div class="row py4 animated fadeInRight">
             <div class="col-sm-4">
                 <h3><?php echo get_field('call2action_text'); ?></h3>
                 <?php if(get_field('call2action_button_class')): ?>
@@ -172,7 +172,7 @@ $services = new WP_Query($args);
 if ($services->have_posts()):
 ?>
 <div class="section section-services bg-lgray">
-    <div class="container">
+    <div class="container animatedParent">
         <div class="section-heading pt4">
         <?php
         $args_page = array(
@@ -184,14 +184,14 @@ if ($services->have_posts()):
 
         if ($lands->have_posts()): $lands->the_post();
         ?>
-            <h3><?php the_title(); ?></h3>
-            <p class="py2"><?php echo strip_tags(limit_string(get_the_content(), 160)); ?></p>
-            <a href="<?php the_permalink(); ?>" class="btn btn-green mt0 mx2">Find out more</a>
+            <h3 class="animated fadeInDownShort"><?php the_title(); ?></h3>
+            <p class="py2 animated fadeInUpShort"><?php echo strip_tags(limit_string(get_the_content(), 160)); ?></p>
+            <a href="<?php the_permalink(); ?>" class="btn btn-green mt0 mx2 py2 animated fadeInUpShort">Find out more</a>
         <?php endif; wp_reset_query(); ?>
         </div>
         <div class="row py4">
-            <?php while($services->have_posts()): $services->the_post(); ?>
-            <div class="col-sm-6 col-md-3 mb3">
+            <?php $sequence = 0; $dataid = 0; while($services->have_posts()): $services->the_post(); ?>
+            <div class="col-sm-6 col-md-3 mb3 animated fadeIn" data-id="<?php echo $dataid+=1; ?>" data-sequence="<?php echo $sequence+=300; ?>">
                 <div class="service text-center p3">
                     <div class="icon-service py2">
                         <?php if ( get_field('service_icon') ): ?>
@@ -218,14 +218,14 @@ if ($services->have_posts()):
 <?php endif; wp_reset_query(); ?>
 
 <div class="section section-review">
-    <div class="container">
+    <div class="container animatedParent">
         <div class="section-heading half pt4">
-            <h3>Answer Financial Customer Reviews</h3>
-            <div class="rating">
+            <h3 class="animated fadeInDownShort">Answer Financial Customer Reviews</h3>
+            <div class="rating animated fadeInUpShort">
                 <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
             </div>
-            <a class="rating-link" href="/reviews">6,714 Reviews</a>
-            <p class="rating-desc py2">99% of our reviewers recommend Answer Financial</p>
+            <a class="rating-link animated fadeInUpShort" href="/reviews">6,714 Reviews</a>
+            <p class="rating-desc py2 animated fadeInUpShort">99% of our reviewers recommend Answer Financial</p>
         </div>
         <?php
         $args = array(
@@ -237,10 +237,10 @@ if ($services->have_posts()):
         if ($reviews->have_posts()):
         ?>
         <div class="row">
-            <div class="col-sm-5 col-md-3 col-md-offset-1 hidden-xs">
+            <div class="col-sm-5 col-md-3 col-md-offset-1 hidden-xs animated fadeIn">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review1.png" alt="">
             </div>
-            <div class="col-sm-7 col-md-7">
+            <div class="col-sm-7 col-md-7 animated fadeIn">
                 <div class="owl-carousel">
                     <?php while($reviews->have_posts()): $reviews->the_post(); ?>
                     <div class="item">
@@ -310,8 +310,8 @@ if ($services->have_posts()):
 
 <?php if ( get_field('call2action2_text') ): ?>
 <div class="section section-call2action2">
-	<div class="container">
-		<div class="row py4 center">
+	<div class="container animatedParent">
+		<div class="row py4 center animated fadeInDownShort">
 			<h3><?php echo get_field('call2action2_text'); ?></h3>
             <?php echo (get_field('call2action2_subtext')) ? '<p>'.get_field('call2action2_subtext').'</p>' : ''; ?>
             <?php if(get_field('call2action2_button_class')): ?>
@@ -327,8 +327,8 @@ if ($services->have_posts()):
 
 <?php if(get_field('pre_footer_title')) : ?>
 <div class="section section-b2c">
-    <div class="container">
-        <div class="row py4 center">
+    <div class="container animatedParent">
+        <div class="row py4 center animated fadeIn">
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                 <h3><?php echo get_field('pre_footer_title'); ?></h3>
                 <?php if(get_field('pre_footer_body')): ?>
