@@ -24,30 +24,30 @@ get_header(); // Loads the header.php template. ?>
                     endif; ?>
 
                     <?php if($addclass == 'btn-white-v2ext'):
-                        $addclass = $addclass." btn-white-v2";
-                    endif; ?>
+                        $addclass = $addclass." btn-white-v2"; ?>
+                        <a href="<?php echo the_sub_field('link'); ?>" class="btn <?php echo $addclass; ?>"><?php the_sub_field('text'); ?></a>
+                    <?php endif; ?>
 
-                    <a href="<?php echo the_sub_field('link'); ?>" class="btn <?php echo $addclass; ?>"><?php the_sub_field('text'); ?></a>
                 <?php $rowctr++; endwhile; ?>
             <?php endif; ?>
         </div>
-        <?php if( get_field('title', 'option') ): ?>
-        <div class="masterhead-body-right center animated fadeIn">
-            <h3><?php echo get_field('title', 'option'); ?></h3>
-            <p>
-                <?php echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
-                <?php echo (get_field('hightlight_sub', 'option')) ? '<span class="highlight">'.get_field('hightlight_sub', 'option').'</span>' : ''; ?>
-                <?php echo (get_field('hightlight_main', 'option')) ? '<span class="highlight2">'.get_field('hightlight_main', 'option').'</span>' : ''; ?>
-            </p>
-        </div>
-        <?php endif; ?>
+<!--        --><?php //if( get_field('title', 'option') ): ?>
+<!--        <div class="masterhead-body-right center animated fadeIn">-->
+<!--            <h3>--><?php //echo get_field('title', 'option'); ?><!--</h3>-->
+<!--            <p>-->
+<!--                --><?php //echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
+<!--                --><?php //echo (get_field('hightlight_sub', 'option')) ? '<span class="highlight">'.get_field('hightlight_sub', 'option').'</span>' : ''; ?>
+<!--                --><?php //echo (get_field('hightlight_main', 'option')) ? '<span class="highlight2">'.get_field('hightlight_main', 'option').'</span>' : ''; ?>
+<!--            </p>-->
+<!--        </div>-->
+<!--        --><?php //endif; ?>
     </div>
 </div>
 
 <div class="section section-partners bg-lgray <?php echo ( get_field('featurette') ) ? 'feature-link' : ''; ?>">
     <div class="container animatedParent">
         <div class="section-heading pt4 animated fadeInDownShort">
-            <h3>Our Insurance Partners</h3>
+            <h3>Our Finance Partners</h3>
         </div>
         <div class="row pt3 pb4 center animated fadeInUpShort">
             <div class="col-sm-3 col-md-2 col-md-offset-2">
@@ -59,10 +59,6 @@ get_header(); // Loads the header.php template. ?>
                         <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
                     </div>
                     <p class="rating-reviews">1,014 Reviews</p>
-<!--                    <div class="partner-desc">-->
-<!--                        <p>Progressive is one of the largest auto insurers in the country and offers…</p>-->
-<!--                        <a href="#">Read more</a>-->
-<!--                    </div>-->
                 </div>
             </div>
             <div class="col-sm-3 col-md-2">
@@ -126,8 +122,6 @@ get_header(); // Loads the header.php template. ?>
         <?php endif; ?>
         <?php if( have_rows('about_qualities') ): $rowctr = 1; ?>
         <div class="row pt3 pb4">
-<!--            <h3>--><?php //the_sub_field('quality'); ?><!--</h3>-->
-<!--            <p>--><?php //the_sub_field('description'); ?><!--</p>-->
             <?php $sequence = 0; $dataid = 0; while( have_rows('about_qualities') ): the_row(); ?>
             <div class="col-sm-6 col-md-3 mb3 animated fadeIn" data-id="<?php echo $dataid+=1; ?>" data-sequence="<?php echo $sequence+=300; ?>">
                 <div class="home-about text-center p3">

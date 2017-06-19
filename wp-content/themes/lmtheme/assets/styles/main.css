@@ -3972,6 +3972,46 @@ blockquote:after {
   display: none;
 }
 
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.collapse {
+  display: none;
+  visibility: hidden;
+}
+
+.collapse.in {
+  display: block;
+  visibility: visible;
+}
+
+tr.collapse.in {
+  display: table-row;
+}
+
+tbody.collapse.in {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility !important;
+  transition-property: height, visibility !important;
+  -webkit-transition-duration: 0.35s !important;
+  transition-duration: 0.35s !important;
+  -webkit-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
+}
+
 .dropup,
 .dropdown {
   position: relative;
@@ -6018,8 +6058,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .navbar-fixed-top .container .navbar-collapse {
     background: #fafafa;
     overflow: visible;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
   }
   .navbar-fixed-top .container .navbar-collapse {
     padding-right: 0;

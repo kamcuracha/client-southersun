@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
         Global: {
             init: function() {
                 this.stickyNav();
-                this.modalSubscribe();
+                // this.modalSubscribe();
                 this.showFeature();
                 if(location.pathname == "/") this.owlCarousel();
                 if(window.location.href.indexOf("service") > -1) this.serviceAccordion();
@@ -67,25 +67,25 @@ jQuery(document).ready(function($) {
 
                 }
             },
-            modalSubscribe: function() {
-                var modal = document.getElementById('modalSubs');
-                var btn = document.getElementById("modalBtn");
-                var span = document.getElementsByClassName("modalClose")[0];
-
-                btn.onclick = function() {
-                    modal.style.display = "block";
-                }
-
-                span.onclick = function() {
-                    modal.style.display = "none";
-                }
-
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            },
+            // modalSubscribe: function() {
+            //     var modal = document.getElementById('modalSubs');
+            //     var btn = document.getElementById("modalBtn");
+            //     var span = document.getElementsByClassName("modalClose")[0];
+            //
+            //     btn.onclick = function() {
+            //         modal.style.display = "block";
+            //     }
+            //
+            //     span.onclick = function() {
+            //         modal.style.display = "none";
+            //     }
+            //
+            //     window.onclick = function(event) {
+            //         if (event.target == modal) {
+            //             modal.style.display = "none";
+            //         }
+            //     }
+            // },
             showFeature: function() {
                 $(".feature-link").append("<span class='added'></span>");
                 $("span.added").click(function () {

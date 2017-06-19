@@ -1,25 +1,25 @@
 <div class="section section-newsletter">
     <div class="container animatedParent">
         <div class="row">
-            <div class="col-sm-12 col-md-6 py3 text-left animated fadeInLeftShort">
-                <p>Newsletter be in the know.</p>
-                <a id="modalBtn" class="btn btn-white mx2">Subscribe</a>
-
-                <div id="modalSubs" class="modal">
-                    <div class="modal-content">
-                        <span class="modalClose">&times;</span>
-                        <div class="tnp tnp-subscription container-fluid">
-                            <form id="form_modalsubs" method="post" action="<?php echo get_site_url(); ?>/?na=s" onsubmit="return newsletter_check(this)">
-                                <div class="form-group frm_form_field form-field tnp-f1ield tnp-f1ield-email"><label for="tnp_field_email" class="frm_primary_label">Email <span class="frm_required">*</span></label>
-                                    <input class="tnp-email form-control" type="email" name="ne" required></div><br>
-                                <div class="frm_submit tnp-fie1ld tnp-fie1ld-button"><input class="btn btn-green tnp-submit" type="submit" value="Subscribe">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 py3 text-right animated fadeInRightShort">
+<!--            <div class="col-sm-12 col-md-6 py3 text-left animated fadeInLeftShort">-->
+<!--                <p>Newsletter be in the know.</p>-->
+<!--                <a id="modalBtn" class="btn btn-white mx2">Subscribe</a>-->
+<!---->
+<!--                <div id="modalSubs" class="modal">-->
+<!--                    <div class="modal-content">-->
+<!--                        <span class="modalClose">&times;</span>-->
+<!--                        <div class="tnp tnp-subscription container-fluid">-->
+<!--                            <form id="form_modalsubs" method="post" action="--><?php //echo get_site_url(); ?><!--/?na=s" onsubmit="return newsletter_check(this)">-->
+<!--                                <div class="form-group frm_form_field form-field tnp-f1ield tnp-f1ield-email"><label for="tnp_field_email" class="frm_primary_label">Email <span class="frm_required">*</span></label>-->
+<!--                                    <input class="tnp-email form-control" type="email" name="ne" required></div><br>-->
+<!--                                <div class="frm_submit tnp-fie1ld tnp-fie1ld-button"><input class="btn btn-green tnp-submit" type="submit" value="Subscribe">-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="col-sm-12 col-md-6 col-md-offset-6 py3 text-right animated fadeInRightShort">
             <?php if( have_rows('links', 'option') ): ?>
             <p>Stay connected</p>
             <ul class="social-icons">
@@ -42,7 +42,7 @@
 <footer class="section section-prefooter bg-lgray">
   <div class="container animatedParent">
       <div class="row">
-          <div class="col-sm-3 animated fadeInUpShort">
+          <div class="col-sm-4 animated fadeInUpShort">
               <div class="widget">
                   <h4 class="widget-title">
                       <a href="/">
@@ -70,6 +70,7 @@
                       <li><a href="/contact-us">Contact Us</a></li>
                       <li><a href="/privacy">Privacy Policy</a></li>
                       <li><a href="/terms">Terms & Conditions</a></li>
+                      <li><a href="/sitemap">Sitemap</a></li>
                   </ul>
               </div>
           </div>
@@ -93,17 +94,17 @@
                   </ul>
               </div>
           </div>
-          <div class="col-sm-3 animated fadeInUpShort">
-          <?php if( get_field('title', 'option') ): ?>
-              <div class="widget">
-                  <h4 class="widget-title center"><?php echo get_field('title', 'option'); ?></h4>
-                  <p class="center">
-                      <?php echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
-                      <?php echo (get_field('hightlight_sub', 'option')) ? '<span class="highlight">'.get_field('hightlight_sub', 'option').'</span>' : ''; ?>
-                      <?php echo (get_field('hightlight_main', 'option')) ? '<span class="highlight2">'.get_field('hightlight_main', 'option').'</span>' : ''; ?>
-                  </p>
-              </div>
-          <?php endif; ?>
+<!--          <div class="col-sm-3 animated fadeInUpShort">-->
+<!--          --><?php //if( get_field('title', 'option') ): ?>
+<!--              <div class="widget">-->
+<!--                  <h4 class="widget-title center">--><?php //echo get_field('title', 'option'); ?><!--</h4>-->
+<!--                  <p class="center">-->
+<!--                      --><?php //echo (get_field('body', 'option')) ? get_field('body', 'option') : ''; ?>
+<!--                      --><?php //echo (get_field('hightlight_sub', 'option')) ? '<span class="highlight">'.get_field('hightlight_sub', 'option').'</span>' : ''; ?>
+<!--                      --><?php //echo (get_field('hightlight_main', 'option')) ? '<span class="highlight2">'.get_field('hightlight_main', 'option').'</span>' : ''; ?>
+<!--                  </p>-->
+<!--              </div>-->
+<!--          --><?php //endif; ?>
       </div>
       </div>
   </div>
