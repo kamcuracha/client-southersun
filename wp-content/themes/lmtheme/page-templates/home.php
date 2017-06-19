@@ -51,7 +51,7 @@ get_header(); // Loads the header.php template. ?>
         </div>
         <?php
         $args = array(
-            'posts_per_page' => 20,
+            'posts_per_page' => 30,
             'post_type' => 'partner'
         );
         $partners = new WP_Query($args);
@@ -70,8 +70,8 @@ get_header(); // Loads the header.php template. ?>
                         <?php endif; ?>
                     <?php endwhile; ?>
                 </div>
-                <div class="more-holder py3">
-                    <a class="more-link" href="/partners">and more...</a>
+                <div class="more-holder pt4">
+                    <p class="more-link">and more...</p>
                 </div>
             </div>
         <?php endif; wp_reset_query(); ?>

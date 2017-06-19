@@ -19,13 +19,24 @@ jQuery(document).ready(function($) {
             owlCarouselPartners: function() {
                 $('#owl-carousel-partners').owlCarousel({
                     loop: true,
-                    items: 4,
+                    items: 5,
                     margin: 10,
                     autoplay: true,
                     autoplayTimeout: 7000,
                     autoplayHoverPause: true,
-                    autoHeight: true,
-                    pagination: true
+                    autoHeight: false,
+                    pagination: true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:5
+                        }
+                    }
                 });
             },
             owlCarouselReviews: function() {
