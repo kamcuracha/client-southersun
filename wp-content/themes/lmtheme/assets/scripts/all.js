@@ -2980,7 +2980,7 @@ jQuery(document).ready(function($) {
                 this.stickyNav();
                 // this.modalSubscribe();
                 this.showFeature();
-                if(location.pathname == "/") this.owlCarousel();
+                if(location.pathname == "/") { this.owlCarouselPartners(); this.owlCarouselReviews(); }
                 if(window.location.href.indexOf("service") > -1) this.serviceAccordion();
                 // if(window.location.href.indexOf("contact-us") > -1) this.gmap();
             },
@@ -2991,8 +2991,20 @@ jQuery(document).ready(function($) {
                     }, 10))
                 });
             },
-            owlCarousel: function() {
-                $('.owl-carousel').owlCarousel({
+            owlCarouselPartners: function() {
+                $('#owl-carousel-partners').owlCarousel({
+                    loop: true,
+                    items: 4,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 7000,
+                    autoplayHoverPause: true,
+                    autoHeight: true,
+                    pagination: true
+                });
+            },
+            owlCarouselReviews: function() {
+                $('#owl-carousel-reviews').owlCarousel({
                     loop: true,
                     items: 1,
 					margin: 10,

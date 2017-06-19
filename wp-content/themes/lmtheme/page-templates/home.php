@@ -49,55 +49,32 @@ get_header(); // Loads the header.php template. ?>
         <div class="section-heading pt4 animated fadeInDownShort">
             <h3>Our Finance Partners</h3>
         </div>
-        <div class="row pt3 pb4 center animated fadeInUpShort">
-            <div class="col-sm-3 col-md-2 col-md-offset-2">
-                <div class="partner">
-                    <div class="partner-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-fbaa.png" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="rating">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
-                    </div>
-                    <p class="rating-reviews">1,014 Reviews</p>
+        <?php
+        $args = array(
+            'posts_per_page' => 20,
+            'post_type' => 'partner'
+        );
+        $partners = new WP_Query($args);
+
+        if ($partners->have_posts()): ?>
+
+            <div class="row pt3 pb4 center animated fadeInUpShort">
+                <div id="owl-carousel-partners" class="owl-carousel">
+                    <?php while($partners->have_posts()): $partners->the_post(); ?>
+                        <?php if(get_field('partner_logo')) : ?>
+                        <div class="partner item">
+                            <div class="partner-logo">
+                                <?php echo (get_field('partner_link')) ? '<a target="_blank" href="'.get_field('partner_link').'">' : ''; ?><img src="<?php echo get_field('partner_logo'); ?>" alt="" class="img-responsive center-block"><?php echo (get_field('partner_link')) ? '</a>' : ''; ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                </div>
+                <div class="more-holder py3">
+                    <a class="more-link" href="/partners">and more...</a>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-2">
-                <div class="partner">
-                    <div class="partner-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-westpac.png" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="rating">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
-                    </div>
-                    <p class="rating-reviews">558 Reviews</p>
-                </div>
-            </div>
-            <div class="col-sm-3 col-md-2">
-                <div class="partner">
-                    <div class="partner-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-ssf.png" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="rating">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
-                    </div>
-                    <p class="rating-reviews">1,321 Reviews</p>
-                </div>
-            </div>
-            <div class="col-sm-3 col-md-2">
-                <div class="partner">
-                    <div class="partner-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-parters-suncorp.png" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="rating">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span>
-                    </div>
-                    <p class="rating-reviews">131 Reviews</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-md-offset-3">
-                <a class="more-link" href="/partners">and more...</a>
-            </div>
-        </div>
+        <?php endif; wp_reset_query(); ?>
         <?php if ( get_field('featurette') ): ?>
             <div class="row center">
                 <div class="col-sm-8 col-sm-offset-2">
@@ -235,7 +212,7 @@ if ($services->have_posts()):
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-review1.png" alt="">
             </div>
             <div class="col-sm-7 col-md-7 animated fadeIn">
-                <div class="owl-carousel">
+                <div id="owl-carousel-reviews" class="owl-carousel">
                     <?php while($reviews->have_posts()): $reviews->the_post(); ?>
                     <div class="item">
                         <blockquote>

@@ -6372,15 +6372,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-partners .partner-logo {
   position: relative;
-  height: 76px;
 }
 
-.section-partners .partner-logo img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.section-partners .partner-logo a img:hover {
+  opacity: 0.7;
 }
 
 .section-partners .rating-reviews {

@@ -76,13 +76,11 @@
   }
   .partner-logo {
     position: relative;
-    height: 76px;
 
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    a img {
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
   .rating-reviews {
@@ -100,34 +98,6 @@
     font-size: 14px;
     color: #777;
   }
-  //.partner:hover {
-  //  &:before {
-  //    position: absolute;
-  //    top: 0;
-  //    left: 0;
-  //    border: solid 1px #e3e3e3;
-  //    height: 270px;
-  //    width: 100%;
-  //    z-index: 1;
-  //    content: '';
-  //    margin-top: -20px;
-  //    margin-bottom: 39px;
-  //    overflow: visible;
-  //  }
-  //  .partner-desc {
-  //    position: absolute;
-  //    z-index: 9999;
-  //    bottom: 0;
-  //    margin-bottom: -94px;
-  //    display: block;
-  //    -webkit-animation-name: plogo-move;
-  //    animation-name: plogo-move;
-  //    -webkit-animation-duration: 0.25s;
-  //    animation-duration: 0.25s;
-  //    -webkit-animation-timing-function: ease;
-  //    animation-timing-function: ease;
-  //  }
-  //}
 }
 
 .section-call2action {
