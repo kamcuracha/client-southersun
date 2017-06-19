@@ -14,10 +14,10 @@ get_header(); // Loads the header.php template. ?>
     </div>
 </div>
 
-<div class="section">
+<div class="section section-normal">
   <div class="container">
-    <div class="row py3">
-        <div class="col-sm-12"><?php the_content(); ?></div>
+    <div class="row py4 my3">
+        <div class="col-sm-12"><?php echo apply_filters('the_content', $post->post_content); ?></div>
     </div>
   </div>
 </div>

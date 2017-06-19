@@ -6597,57 +6597,67 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-about-us h2,
-.section-single-service h2 {
+.section-single-service h2,
+.section-normal h2 {
   margin-bottom: 30px;
 }
 
 .section-about-us h4,
-.section-single-service h4 {
+.section-single-service h4,
+.section-normal h4 {
   color: #6faf57;
 }
 
 .section-about-us h4:before,
-.section-single-service h4:before {
+.section-single-service h4:before,
+.section-normal h4:before {
   content: "\f054";
   padding-right: 10px;
   font: normal normal normal 14px/1 FontAwesome;
 }
 
 .section-about-us ul,
-.section-single-service ul {
+.section-single-service ul,
+.section-normal ul {
   margin-top: -18px;
   margin-bottom: 20px;
 }
 
 .section-about-us ul:before, .section-about-us ul:after,
 .section-single-service ul:before,
-.section-single-service ul:after {
+.section-single-service ul:after,
+.section-normal ul:before,
+.section-normal ul:after {
   content: " ";
   display: table;
 }
 
 .section-about-us ul:after,
-.section-single-service ul:after {
+.section-single-service ul:after,
+.section-normal ul:after {
   clear: both;
 }
 
 .section-about-us li,
-.section-single-service li {
+.section-single-service li,
+.section-normal li {
   float: left;
   width: 50%;
   height: auto;
 }
 
 .section-about-us li:before,
-.section-single-service li:before {
-  content: "\f054";
+.section-single-service li:before,
+.section-normal li:before {
+  content: "\f111";
   color: #6faf57;
   padding-right: 10px;
   font: normal normal normal 14px/1 FontAwesome;
 }
 
 .section-about-us a,
-.section-single-service a {
+.section-single-service a,
+.section-normal a {
   color: #6faf57;
 }
 

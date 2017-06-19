@@ -68,8 +68,8 @@
                       <li><a href="/about-us">About Us</a></li>
                       <li><a href="/contact-us">Apply Now</a></li>
                       <li><a href="/contact-us">Contact Us</a></li>
-                      <li><a href="/privacy">Privacy Policy</a></li>
-                      <li><a href="/terms">Terms & Conditions</a></li>
+                      <li><a href="/privacy-policy">Privacy Policy</a></li>
+                      <li><a href="/terms-conditions">Terms & Conditions</a></li>
                       <li><a href="/sitemap">Sitemap</a></li>
                   </ul>
               </div>

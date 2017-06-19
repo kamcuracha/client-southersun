@@ -282,7 +282,8 @@
 }
 
 .section-about-us,
-.section-single-service {
+.section-single-service,
+.section-normal {
   h2 {
     margin-bottom: 30px;
   }
@@ -316,7 +317,7 @@
     height: auto;
 
     &:before {
-      content: "\f054";
+      content: "\f111";
       color: #6faf57;
       padding-right: 10px;
       font: normal normal normal 14px/1 FontAwesome;
