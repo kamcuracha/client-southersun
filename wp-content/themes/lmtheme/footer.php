@@ -70,7 +70,7 @@
                       <li><a href="/contact-us">Contact Us</a></li>
                       <li><a href="/privacy-policy">Privacy Policy</a></li>
                       <li><a href="/terms-conditions">Terms & Conditions</a></li>
-                      <li><a href="/sitemap">Sitemap</a></li>
+                      <li><a href="/sitemap.xml">Sitemap</a></li>
                   </ul>
               </div>
           </div>
