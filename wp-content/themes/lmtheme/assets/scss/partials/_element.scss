@@ -5,11 +5,19 @@
   background-position: center 60%;
   padding: 1em 0 !important;
 
+  .page-template-contact-page & {
+    background-position: center bottom;
+  }
+
   .hero-content {
     padding: 100px 15%
   }
   h1 {
     color: #fff;
+
+    .page-template-contact-page & {
+      display: none;
+    }
   }
 }
 
