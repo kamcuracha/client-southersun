@@ -51,8 +51,10 @@ get_header(); // Loads the header.php template. ?>
         </div>
         <?php
         $args = array(
-            'posts_per_page' => 30,
-            'post_type' => 'partner'
+            'posts_per_page' => -1,
+            'post_type' => 'partner',
+            'orderby'=> 'title',
+            'order' => 'ASC'
         );
         $partners = new WP_Query($args);
 
@@ -79,9 +81,9 @@ get_header(); // Loads the header.php template. ?>
                     <?php endif; ?>
                 <?php endwhile; ?>
                 </div>
-                <div class="more-holder pt4">
-                    <p class="more-link">and more...</p>
-                </div>
+<!--                <div class="more-holder pt4">-->
+<!--                    <p class="more-link">and more...</p>-->
+<!--                </div>-->
             </div>
         <?php endif; wp_reset_query(); ?>
         <?php if ( get_field('featurette') ): ?>
