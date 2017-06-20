@@ -326,7 +326,16 @@
   a {
     color: #6faf57;
   }
+}
 
+.section-normal {
+  h4:before {
+    content: none;
+  }
+  li {
+    float: unset;
+    width: auto;
+  }
 }
 
 .section-single-service {

@@ -6661,6 +6661,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #6faf57;
 }
 
+.section-normal h4:before {
+  content: none;
+}
+
+.section-normal li {
+  float: unset;
+  width: auto;
+}
+
 .section-single-service h2 {
   display: none;
 }
