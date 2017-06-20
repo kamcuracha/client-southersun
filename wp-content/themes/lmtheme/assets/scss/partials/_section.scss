@@ -75,7 +75,8 @@
     height: 100%;
   }
   .partner-logo {
-    position: relative;
+    // position: relative;
+    display: inline-block;
 
     a img {
       &:hover {
@@ -85,7 +86,9 @@
   }
   img {
     height: 75px;
-    width: auto !important;
+    //width: auto !important;
+    max-width: 100%;
+    margin: 0 40px 0;
   }
   .rating-reviews {
     color: #6faf57;

@@ -5,7 +5,10 @@ jQuery(document).ready(function($) {
                 this.stickyNav();
                 // this.modalSubscribe();
                 this.showFeature();
-                if(location.pathname == "/") { this.owlCarouselPartners(); this.owlCarouselReviews(); }
+                if(location.pathname == "/") {
+                    // this.owlCarouselPartners();
+                    this.owlCarouselReviews();
+                }
                 if(window.location.href.indexOf("service") > -1) this.serviceAccordion();
                 // if(window.location.href.indexOf("contact-us") > -1) this.gmap();
             },
@@ -16,29 +19,29 @@ jQuery(document).ready(function($) {
                     }, 10))
                 });
             },
-            owlCarouselPartners: function() {
-                $('#owl-carousel-partners').owlCarousel({
-                    loop: true,
-                    items: 5,
-                    margin: 10,
-                    autoplay: true,
-                    autoplayTimeout: 7000,
-                    autoplayHoverPause: true,
-                    autoHeight: false,
-                    pagination: true,
-                    responsive:{
-                        0:{
-                            items:1
-                        },
-                        600:{
-                            items:3
-                        },
-                        1000:{
-                            items:5
-                        }
-                    }
-                });
-            },
+            // owlCarouselPartners: function() {
+            //     $('#owl-carousel-partners').owlCarousel({
+            //         loop: true,
+            //         items: 5,
+            //         margin: 10,
+            //         autoplay: true,
+            //         autoplayTimeout: 7000,
+            //         autoplayHoverPause: true,
+            //         autoHeight: false,
+            //         pagination: true,
+            //         responsive:{
+            //             0:{
+            //                 items:1
+            //             },
+            //             600:{
+            //                 items:3
+            //             },
+            //             1000:{
+            //                 items:5
+            //             }
+            //         }
+            //     });
+            // },
             owlCarouselReviews: function() {
                 $('#owl-carousel-reviews').owlCarousel({
                     loop: true,

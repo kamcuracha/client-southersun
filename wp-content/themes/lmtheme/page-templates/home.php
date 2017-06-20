@@ -59,16 +59,25 @@ get_header(); // Loads the header.php template. ?>
         if ($partners->have_posts()): ?>
 
             <div class="row pt3 pb4 center animated fadeInUpShort">
-                <div id="owl-carousel-partners" class="owl-carousel">
-                    <?php while($partners->have_posts()): $partners->the_post(); ?>
-                        <?php if(get_field('partner_logo')) : ?>
-                        <div class="partner item">
-                            <div class="partner-logo">
-                                <?php echo (get_field('partner_link')) ? '<a target="_blank" href="'.get_field('partner_link').'">' : ''; ?><img src="<?php echo get_field('partner_logo'); ?>" alt="" class="img-responsive center-block"><?php echo (get_field('partner_link')) ? '</a>' : ''; ?>
-                            </div>
+<!--                <div id="owl-carousel-partners" class="owl-carousel">-->
+<!--                    --><?php //while($partners->have_posts()): $partners->the_post(); ?>
+<!--                        --><?php //if(get_field('partner_logo')) : ?>
+<!--                        <div class="partner item">-->
+<!--                            <div class="partner-logo">-->
+<!--                                --><?php //echo (get_field('partner_link')) ? '<a target="_blank" href="'.get_field('partner_link').'">' : ''; ?><!--<img src="--><?php //echo get_field('partner_logo'); ?><!--" alt="" class="img-responsive center-block">--><?php //echo (get_field('partner_link')) ? '</a>' : ''; ?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        --><?php //endif; ?>
+<!--                    --><?php //endwhile; ?>
+<!--                </div>-->
+                <div class="partner text-center">
+                <?php while($partners->have_posts()): $partners->the_post(); ?>
+                    <?php if(get_field('partner_logo')) : ?>
+                        <div class="partner-logo">
+                            <?php echo (get_field('partner_link')) ? '<a target="_blank" href="'.get_field('partner_link').'">' : ''; ?><img src="<?php echo get_field('partner_logo'); ?>" alt="" class="img-responsive center-block"><?php echo (get_field('partner_link')) ? '</a>' : ''; ?>
                         </div>
-                        <?php endif; ?>
-                    <?php endwhile; ?>
+                    <?php endif; ?>
+                <?php endwhile; ?>
                 </div>
                 <div class="more-holder pt4">
                     <p class="more-link">and more...</p>

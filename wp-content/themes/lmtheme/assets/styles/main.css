@@ -6380,7 +6380,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-partners .partner-logo {
-  position: relative;
+  display: inline-block;
 }
 
 .section-partners .partner-logo a img:hover {
@@ -6389,7 +6389,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .section-partners img {
   height: 75px;
-  width: auto !important;
+  max-width: 100%;
+  margin: 0 40px 0;
 }
 
 .section-partners .rating-reviews {
