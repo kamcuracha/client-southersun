@@ -3826,7 +3826,7 @@ body {
 }
 
 .page-template-contact-page .hero-bg h1 {
-  display: none;
+  visibility: hidden;
 }
 
 .rating .star {
