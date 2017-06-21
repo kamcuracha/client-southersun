@@ -20,13 +20,13 @@ get_header(); // Loads the header.php template. ?>
                     $addclass = get_sub_field('button_class'); ?>
 
                     <?php if($rowctr == 1):
-                        $addclass = get_sub_field('button_class')." mr3";
+                        $addclass = $addclass." mr3";
                     endif; ?>
 
-                    <?php if($addclass == 'btn-white-v2ext'):
+                    <?php if(get_sub_field('button_class') == 'btn-white-v2ext'):
                         $addclass = $addclass." btn-white-v2"; ?>
-                        <a href="<?php echo the_sub_field('link'); ?>" class="btn <?php echo $addclass; ?>"><?php the_sub_field('text'); ?></a>
                     <?php endif; ?>
+                    <a href="<?php echo the_sub_field('link'); ?>" class="btn <?php echo $addclass; ?>"><?php the_sub_field('text'); ?></a>
 
                 <?php $rowctr++; endwhile; ?>
             <?php endif; ?>
@@ -47,7 +47,8 @@ get_header(); // Loads the header.php template. ?>
 <div class="section section-partners bg-lgray <?php echo ( get_field('featurette') ) ? 'feature-link' : ''; ?>">
     <div class="container animatedParent">
         <div class="section-heading pt4 animated fadeInDownShort">
-            <h3>Our Finance Partners</h3>
+            <h3><?php echo (get_field('partners_heading')) ? get_field('partners_heading') : 'Our Finance Partners'; ?></h3>
+            <?php echo (get_field('partners_body')) ? '<p>'.get_field('partners_body').'</p>' : ''; ?>
         </div>
         <?php
         $args = array(
@@ -81,9 +82,9 @@ get_header(); // Loads the header.php template. ?>
                     <?php endif; ?>
                 <?php endwhile; ?>
                 </div>
-<!--                <div class="more-holder pt4">-->
-<!--                    <p class="more-link">and more...</p>-->
-<!--                </div>-->
+                <div class="more-holder pt4">
+                    <p class="more-link">and more...</p>
+                </div>
             </div>
         <?php endif; wp_reset_query(); ?>
         <?php if ( get_field('featurette') ): ?>
