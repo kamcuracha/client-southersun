@@ -6388,7 +6388,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .section-partners img {
-  height: 75px;
+  height: auto;
+  width: 150px !important;
   max-width: 100%;
   margin: 0 16px 0;
 }

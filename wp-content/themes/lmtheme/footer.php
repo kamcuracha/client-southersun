@@ -44,34 +44,32 @@
       <div class="row">
           <div class="col-sm-4 animated fadeInUpShort">
               <div class="widget">
+                  <?php if( get_field('logo', 'option') ): ?>
                   <h4 class="widget-title">
                       <a href="/">
-                          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-logo-ssf.png" alt="">
+                          <img class="img-responsive" src="<?php echo get_field('logo', 'option'); ?>" alt="">
                       </a>
                   </h4>
+                  <?php endif; ?>
                   <ul class="widget-address">
-                      <li>&copy; <?php echo date("Y") ?> <?php echo get_bloginfo( 'name' ); ?>.</li>
-                      <li>ABN 62 081 162 843</li>
-                      <li>ACL Number 654321</li>
+                      <?php if( get_field('details', 'option') ): ?>
+                          <li><?php echo get_field('details', 'option'); ?></li>
+                      <?php endif; ?>
                       <li>Website by <a class="lm-link" target="_blank" href="https://www.lightmedia.com.au/">Light Media</a></li>
+                      <?php if( have_rows('images', 'option') ): ?>
                       <li class="my3">
-                          <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-footer-partners-fbaa.png" alt=""></a>
-                          <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-footer-partners-mfaa.png" alt=""></a>
+                          <?php while( have_rows('images', 'option') ): the_row(); ?>
+                              <?php echo (get_sub_field('link')) ? '<a target="_blank" href="'.get_sub_field('link').'">' : ''; ?><img src="<?php echo get_sub_field('image'); ?>" alt=""><?php get_sub_field('link') ? '</a>' : ''; ?>
+                          <?php endwhile; ?>
                       </li>
+                      <?php endif; ?>
                   </ul>
               </div>
           </div>
           <div class="col-sm-3 animated fadeInUpShort">
               <div class="widget">
                   <h4 class="widget-title">Quick Links</h4>
-                  <ul class="widget-links">
-                      <li><a href="/about-us">About Us</a></li>
-                      <li><a href="/contact-us">Apply Now</a></li>
-                      <li><a href="/contact-us">Contact Us</a></li>
-                      <li><a href="/privacy-policy">Privacy Policy</a></li>
-                      <li><a href="/terms-conditions">Terms & Conditions</a></li>
-                      <li><a href="/sitemap.xml">Sitemap</a></li>
-                  </ul>
+                  <?php hybrid_get_menu( 'secondary' ); // Loads the menu/primary.php template. ?>
               </div>
           </div>
           <div class="col-sm-3 animated fadeInUpShort">
