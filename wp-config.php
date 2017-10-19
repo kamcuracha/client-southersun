@@ -26,7 +26,7 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 define('DB_NAME', 'db_southernsun');
 
 /** MySQL database username */
-define('DB_USER', 'ad_lightmedia');
+define('DB_USER', 'ad_client');
 
 /** MySQL database password */
 define('DB_PASSWORD', '1234');
